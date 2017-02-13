@@ -1,0 +1,12 @@
+@font-face
+{
+    font-family: 'sport_centerregular';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/sport_center-webfont.eot');
+    src: url('../fonts/sport_center-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/sport_center-webfont.woff2') format('woff2'),
+    url('../fonts/sport_center-webfont.woff') format('woff'),
+    url('../fonts/sport_center-webfont.svg#sport_centerregular') format('svg');
+}
