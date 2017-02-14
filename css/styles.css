@@ -34,6 +34,7 @@ body
 .fondo1 img
 {
     position: absolute;
+    z-index: -99;
     top: 0;
 
     width: 100%;
@@ -55,6 +56,7 @@ body
 .fondo2 img
 {
     position: absolute;
+    z-index: -99;
     top: 100vh;
 
     width: 100%;
@@ -106,7 +108,9 @@ header a
     position: absolute;
     top: 10px;
 
-    width: 106px;
+    width: 10vw;
+    min-width: 50px;
+    max-width: 10%;
     height: 36px;
 
     text-align: center;
@@ -115,17 +119,20 @@ header a
     border: 2px solid white;
     border-radius: 25px;
 }
-
-header a:nth-of-type(1)
+header a img
 {
-    right: 160px;
+    display: none;
+}
+.registrarse
+{
+    right: 13vw;
 
     color: #8d0202;
     background-color: #fff;
 }
-header a:nth-of-type(2)
+.login
 {
-    right: 30px;
+    right: 2vw;
 
     color: #fff;
 }
@@ -154,7 +161,7 @@ section
 }
 .pag1 .contenido span
 {
-    font-size: 1.5vw;
+    font-size: 1.1vw;
 
     display: block;
 
@@ -165,14 +172,14 @@ section
 }
 .pag1 .contenido a
 {
-    font-size: 1.5vw;
-    line-height: 4vw;
+    font-size: 1.1vw;
+    line-height: 3vw;
 
     display: block;
 
     min-width: 10vh;
-    max-width: 30%;
-    height: 4vw;
+    max-width: 20%;
+    height: 3vw;
     margin-top: 50px;
     margin-left: 30px;
 
@@ -180,8 +187,8 @@ section
     text-decoration: none;
 
     color: #fff;
-    border: .3vw solid white;
-    border-radius: 50px;
+    border: .2vw solid white;
+    border-radius: 50vw;
 }
 .pag1 .contenido a img
 {
@@ -198,6 +205,60 @@ section
 .pag2 .contenido .parte2
 {
     height: 50vh;
+}
+
+.pag2 .contenido .parte1 .texto
+{
+    width: 40%;
+    height: 100%;
+}
+
+.pag2 .contenido .parte2 .texto
+{
+    width: 40%;
+    height: 100%;
+    margin-left: 60%;
+
+    text-align: right;
+}
+
+.pag2 .contenido .parte1 .texto h1
+{
+    font-size: 3vw;
+
+    display: block;
+
+    padding-top: 8vw;
+    padding-left: 30px;
+}
+.pag2 .contenido .parte2 .texto h1
+{
+    font-size: 3vw;
+
+    display: block;
+
+    padding-top: 8vw;
+    padding-right: 30px;
+}
+.pag2 .contenido .parte1 .texto span
+{
+    font-size: 1.1vw;
+
+    display: block;
+
+    padding-top: 50px;
+    padding-left: 30px;
+}
+.pag2 .contenido .parte2 .texto span
+{
+    font-size: 1.1vw;
+
+    display: block;
+    /*min-width: 10vh;
+    max-width: 50%;*/
+
+    padding-top: 50px;
+    padding-right: 30px;
 }
 .pag2 .contenido .parte1 img
 {
@@ -228,8 +289,8 @@ section
 }
 .down img
 {
-    width: 10vw;
-    max-width: 75px;
+    width: 9vw;
+    max-width: 50px;
 
     cursor: pointer;
 }
@@ -266,8 +327,38 @@ footer .network img
     color: #8d0202;
     background-color: #fff;
 }
+@media screen and (min-width: 3000px)
+{
+    header a
+    {
+        max-width: 250px;
+    }
+    .registrarse
+    {
+        right: 11vw;
+    }
+}
+@media screen and (min-width: 2000px)
+{
+    .pag2 .contenido .parte1 img
+    {
+        right: 5vh;
+    }
+    .pag2 .contenido .parte2 img
+    {
+        left: 5vh;
+    }
+}
 @media screen and (max-width: 1000px)
 {
+    header a
+    {
+        min-width: 100px;
+    }
+    .registrarse
+    {
+        right: 16vw;
+    }
     .pag2 .contenido .parte1 img
     {
         right: 10vh;
@@ -279,6 +370,31 @@ footer .network img
 }
 @media screen and (max-width: 800px)
 {
+    header a
+    {
+        width: auto;
+        min-width: auto;
+        max-width: auto;
+        height: auto;
+
+        border: none;
+        border-radius: initial;
+    }
+    header a span
+    {
+        display: none;
+    }
+
+    header a img
+    {
+        line-height: 60px;
+
+        display: block;
+
+        width: 40px;
+        height: 40px;
+    }
+
     .fondo1 img
     {
         opacity: 0;
@@ -298,6 +414,7 @@ footer .network img
     .pag1 .contenido
     {
         text-align: center;
+        border-bottom: 1px solid #fff;
     }
     .pag1 .contenido h1
     {
@@ -331,6 +448,10 @@ footer .network img
         margin: 0 auto;
         margin-top: 50px;
     }
+    .pag2 .contenido .parte1
+{
+    border-bottom: 1px solid #fff;
+}
     .registrarse
     {
         display: none;
@@ -338,5 +459,9 @@ footer .network img
     .down img
     {
         min-width: 50px;
+    }
+    .login:hover
+    {
+        background: none;
     }
 }
