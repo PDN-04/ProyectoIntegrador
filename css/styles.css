@@ -21,12 +21,12 @@ body
 }
 
 .fondo1,
-.fondo2
+.fondo1-responsive
+.fondo2,
+.fondo2-responsive
 {
     position: absolute;
     z-index: -99;
-
-    overflow: hidden;
 
     width: 100%;
     height: 100vh;
@@ -38,14 +38,40 @@ body
 
     width: 100%;
     height: 100%;
+
+    opacity: 1;
 }
-.fondo2 img
+.fondo1-responsive img
 {
     position: absolute;
+    z-index: -99;
     top: 0;
 
     width: 100%;
     height: 100%;
+
+    opacity: 0;
+}
+.fondo2 img
+{
+    position: absolute;
+    top: 100vh;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 1;
+}
+.fondo2-responsive img
+{
+    position: absolute;
+    z-index: -99;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
 }
 header
 {
@@ -117,36 +143,36 @@ section
 }
 .pag1 .contenido h1
 {
-    font-size: 75px;
+    font-size: 4.5vw;
 
     display: block;
 
-    width: 30%;
-    min-width: 500px;
+    min-width: 10vh;
+    max-width: 30%;
     padding-top: 200px;
     padding-left: 30px;
 }
 .pag1 .contenido span
 {
-    font-size: 20px;
+    font-size: 1.5vw;
 
     display: block;
 
-    width: 20%;
-    min-width: 400px;
-    margin-top: 50px;
+    min-width: 10vh;
+    max-width: 30%;
+    padding-top: 50px;
     padding-left: 30px;
 }
 .pag1 .contenido a
 {
-    font-size: 30px;
-    line-height: 54px;
+    font-size: 1.5vw;
+    line-height: 4vw;
 
     display: block;
 
-    width: 20%;
-    min-width: 350px;
-    height: 54px;
+    min-width: 10vh;
+    max-width: 30%;
+    height: 4vw;
     margin-top: 50px;
     margin-left: 30px;
 
@@ -154,7 +180,7 @@ section
     text-decoration: none;
 
     color: #fff;
-    border: 3px solid white;
+    border: .3vw solid white;
     border-radius: 50px;
 }
 .pag1 .contenido a img
@@ -165,17 +191,31 @@ section
 {
     height: 100vh;
 }
-.pag2 .contenido img:nth-of-type(1)
+.pag2 .contenido .parte1
+{
+    height: 50vh;
+}
+.pag2 .contenido .parte2
+{
+    height: 50vh;
+}
+.pag2 .contenido .parte1 img
 {
     position: absolute;
-    top: calc(150vh - 418px);
-    right: 200px;
+    right: 20vh;
+    bottom: -50vh;
+
+    height: 20vw;
+    min-height: 25%;
 }
-.pag2 .contenido img:nth-of-type(2)
+.pag2 .contenido .parte2 img
 {
     position: absolute;
     bottom: -100vh;
-    left: 200px;
+    left: 20vh;
+
+    height: 20vw;
+    min-height: 25%;
 }
 .down
 {
@@ -188,6 +228,9 @@ section
 }
 .down img
 {
+    width: 10vw;
+    max-width: 75px;
+
     cursor: pointer;
 }
 footer
@@ -205,6 +248,7 @@ footer .network img
 {
     position: relative;
     top: 30px;
+
     margin: 0 10px;
 }
 .login:hover
@@ -221,4 +265,78 @@ footer .network img
 {
     color: #8d0202;
     background-color: #fff;
+}
+@media screen and (max-width: 1000px)
+{
+    .pag2 .contenido .parte1 img
+    {
+        right: 10vh;
+    }
+    .pag2 .contenido .parte2 img
+    {
+        left: 10vh;
+    }
+}
+@media screen and (max-width: 800px)
+{
+    .fondo1 img
+    {
+        opacity: 0;
+    }
+    .fondo1-responsive img
+    {
+        opacity: 1;
+    }
+    .fondo2 img
+    {
+        opacity: 0;
+    }
+    .fondo2-responsive img
+    {
+        opacity: 1;
+    }
+    .pag1 .contenido
+    {
+        text-align: center;
+    }
+    .pag1 .contenido h1
+    {
+        font-size: 8vw;
+
+        max-width: 80%;
+        margin: 0 auto;
+        padding-top: 150px;
+        padding-left: 0;
+    }
+    .pag1 .contenido span
+    {
+        font-size: 3vw;
+
+        display: block;
+
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+    .pag1 .contenido a
+    {
+        font-size: 3vw;
+        line-height: 7vw;
+
+        display: block;
+
+        min-width: 10vh;
+        max-width: 80%;
+        height: 7vw;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .registrarse
+    {
+        display: none;
+    }
+    .down img
+    {
+        min-width: 50px;
+    }
 }
