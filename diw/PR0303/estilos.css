@@ -1,0 +1,159 @@
+body
+{
+    font-family: Arial;
+}
+.container
+{
+    display: flex;
+
+    margin: 20px;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.network
+{
+    position: relative;
+    width: 250px;
+    height: 30px;
+    margin: 10px;
+	min-width: 250px;
+    cursor: pointer;
+
+    border: 1px solid;
+    border-radius: 5px;
+}
+.network [class^='icon-']
+{
+    font-size: 20px;
+    line-height: 30px;
+
+    position: absolute;
+    left: 0;
+
+    display: block;
+
+    width: 30px;
+    height: 30px;
+
+    text-align: center;
+
+    border-radius: 4px 0 0 4px;
+    box-shadow: 0 0 2px white inset;
+}
+.network .texto
+{
+
+    font-size: 1rem;  
+    font-weight: bold;
+    line-height: 30px;
+
+    position: absolute;
+    right: 0;
+
+    display: block;
+
+    width: 220px;
+    height: 30px;
+
+    text-align: center;
+
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0 0 2px white inset;
+}
+#twitter
+{
+    color: #1da1f2;
+    border-color: #92b2c8;
+    background: linear-gradient(#fff, #c3d5e1);
+    text-shadow: .4px .4px #0a73b3;
+}
+#facebook
+{
+    color: #fff;
+    border-color: #92b2c8;
+    background: linear-gradient(#3b5998, #324b81);
+    text-shadow: .4px .4px #293e6a;
+}
+#google
+{
+    color: #fff;
+    border-color: #0b54cd;
+    background: linear-gradient(#4285f4, #1668f1);
+    text-shadow: .4px .4px #0b54cd;
+}
+#linkedin
+{
+    color: #fff;
+    border-color: #00537e;
+    background: linear-gradient(#0077b5, #006599);
+    text-shadow: .4px .4px #00537e;
+}
+#itunes
+{
+    color: #fff;
+    border-color: #171717;
+    background: linear-gradient(#222, #1c1c1c);
+    text-shadow: .4px .4px #171717;
+}
+#spotify
+{
+    color: #fff;
+    border-color: #20843e;
+    background: linear-gradient(#2ebd59, #27a04b);
+    text-shadow: .4px .4px #20843e;
+}
+#paypal
+{
+    color: #003087;
+    border-color: #bc6b05;
+    background: linear-gradient(#f8971d, #e48207);
+    text-shadow: .4px .4px #00215e;
+}
+#evernote
+{
+    color: #fff;
+    border-color: #5a7e2d;
+    background: linear-gradient(#82b541, #6e9937);
+    text-shadow: .4px .4px #5a7e2d;
+}
+#skype
+{
+    color: #fff;
+    border-color: #007aa8;
+    background: linear-gradient(#00aff0, #0094cb);
+    text-shadow: .4px .4px #007aa8;
+}
+#dropbox
+{
+    color: #007ee5;
+    border-color: #b2b2b2;
+    background: linear-gradient(#fff, #d8d8d8);
+    text-shadow: .4px .4px #b2b2b2;
+}
+#instagram
+{
+    color: #fff;
+    border-color: #87255c;
+    background: linear-gradient(#405de6, #c13584, #f77737,  #fcaf45);
+    text-shadow: .4px .4px #87255c;
+}
+#tumblr
+{
+    color: #fff;
+    border-color: #253140;
+    background: linear-gradient(#35465c, #2d3b4e);
+    text-shadow: .4px .4px #253140;
+}
+@media screen and (max-width: 900px) {
+    .container {
+        max-width: 300px;
+        margin: 20px auto;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .container {
+        max-width: 1000px;
+        margin: 20px auto;
+    }
+}

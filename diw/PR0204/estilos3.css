@@ -1,0 +1,22 @@
+body				{
+					background-color: #000000;
+					}
+ul					{
+					width: 250px;
+					}
+li					{
+					list-style-type: none;
+					padding: 20px;
+					background-color: #e697ff;
+					margin: 5px;
+					float:left;
+					width: 250px;
+					color: white;
+					}
+li:hover				{
+					background-color: #8f1cb2;
+					margin-left: 20px;
+					}
+li:active			{
+					background-color: #ab0000;
+					}

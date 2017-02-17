@@ -1,0 +1,70 @@
+body		{
+			margin:0;
+			background-color: grey;
+			font-family: Arial;
+			}
+#cero		{
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			}
+#uno		{
+			background-color: #dbc9a6;
+			height: 10%;
+			width: 80%;
+			position: absolute;
+			top: 10%;
+			left: 10%;
+			border: 5px solid #aea084;
+			text-align: center;
+			}
+#dos		{
+			background-color: #ffffb3;
+			height: 30%;
+			width: 40%;
+			position: absolute;
+			bottom: 40%;
+			left: 5%;
+			border: 5px solid #ebeba5;
+			text-align: left;
+			}
+#tres		{
+			background-color: #ffe5ff;
+			height: 30%;
+			width: 40%;
+			position: absolute;
+			bottom: 0;
+			left: 5%;
+			border: 5px solid #baa7ba;
+			text-align: left;
+			}
+#cuatro		{
+			background-color: #c6ffff;
+			height: 30%;
+			width: 40%;
+			position: absolute;
+			bottom: 40%;
+			right: 5%;
+			border: 5px solid #98c4c4;
+			text-align: right;
+			}
+#cinco		{
+			background-color: #ffb4b4;
+			height: 30%;
+			width: 40%;
+			position: absolute;
+			bottom: 0;
+			right: 5%;
+			border: 5px solid #865f5f;
+			text-align: right;
+			}
+#seis		{
+			background-color: #91ff91;
+			height: 30%;
+			width: 40%;
+			position: absolute;
+			bottom: 20%;
+			left: 30%;
+			border: 5px solid #64b064;
+			text-align: center;
+			}

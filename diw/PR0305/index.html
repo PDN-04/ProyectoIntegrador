@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+    <title>PR0305</title>
+    <script>
+    function generarDatos(cantidad) {
+    	var datos = [];
+    	for (var i = 0; i < cantidad; i++) {
+    		datos[i] = Math.random();
+    	}
+    	return datos;
+    }
+
+    function calcularPorcentaje(datos) {
+        var porcentajes = [];
+        var acumulador = 0;
+        for (var i = 0; i < datos.length; i++) {
+            acumulador += datos[i];
+        }
+        for (var i = 0; i < datos.length; i++) {
+            var porcentaje = datos[i] * 100 / acumulador;
+            porcentajes[i] = porcentaje;
+        }
+
+        return porcentajes;
+    }
+
+    function calcularRadianes(porcentaje) {
+        var radianes = (2 * Math.PI * porcentaje) / 100;
+        return radianes;
+    }
+
+    function calcularTono(longitud) {
+        var tonos = [];
+        for (var i = 0; i < longitud; i++) {
+            tonos[i] = i * (360 / longitud);
+        }
+        return tonos;
+    }
+
+    var datos = generarDatos(5);
+    var texto = ["Deportes", "Cultura", "Sociedad", "Tecnología", "Otros"];
+    var porcentajes = calcularPorcentaje(datos);
+    var tonos = calcularTono(porcentajes.length);
+
+    function draw() {
+        var canvas = document.getElementById('grafica');
+        if (canvas.getContext) {
+            var ctx = canvas.getContext('2d');
+            var inicio = 0;
+            ctx.font = "15px Arial";
+            for (var i = 0; i < porcentajes.length; i++) {
+                ctx.beginPath();
+                var angulo = calcularRadianes(porcentajes[i]);
+                ctx.arc(300, 300, 100, inicio, inicio + angulo, false);
+                inicio += angulo;
+                ctx.lineTo(300, 300);
+                ctx.fillStyle = "hsl(" + tonos[i] + ", 100%, 50%)";
+                ctx.fill();
+                ctx.fillRect(475, 252 + (i * 20), 15, -15);
+                ctx.beginPath();
+                ctx.fillStyle = "#000000";
+                ctx.fillText(texto[i], 500, 250 + (i * 20));
+            }
+        }
+    }
+    </script>
+</head>
+
+<body onload="draw();">
+    <canvas id="grafica" width="800" height="600">
+    </canvas>
+</body>
+
+</html>

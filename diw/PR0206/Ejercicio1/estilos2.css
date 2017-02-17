@@ -1,0 +1,36 @@
+body		{
+			margin:0;
+			background-color: grey;
+			}
+#uno		{
+			background-color: blue;
+			height: 50%;
+			width: 50%;
+			position: absolute;
+			top: 0;
+			left: 20%;
+			}
+#dos		{
+			background-color: green;
+			height: 40%;
+			width: 25%;
+			position: absolute;
+			bottom: 30%;
+			left: 10%;
+			}
+#tres		{
+			background-color: yellow;
+			height: 40%;
+			width: 30%;
+			position: absolute;
+			top: 20%;
+			right: 15%;
+			}
+#cuatro		{
+			background-color: red;
+			height: 30%;
+			width: 40%;
+			position: absolute;
+			bottom: 15%;
+			left: 30%;
+			}

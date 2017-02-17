@@ -1,804 +1,385 @@
+/* Importar fuentes */
+@font-face
+{
+    font-family: 'oswaldregular';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/oswald-regular-webfont.eot');
+    src: url('../fonts/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/oswald-regular-webfont.woff2') format('woff2'),
+    url('../fonts/oswald-regular-webfont.woff') format('woff'),
+    url('../fonts/oswald-regular-webfont.ttf') format('truetype'),
+    url('../fonts/oswald-regular-webfont.svg#oswaldregular') format('svg');
+}
+@font-face
+{
+    font-family: 'oswaldbold';
+    font-weight: bold;
+    font-style: normal;
+
+    src: url('../fonts/oswald-bold-webfont.eot');
+    src: url('../fonts/oswald-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/oswald-bold-webfont.woff2') format('woff2'),
+    url('../fonts/oswald-bold-webfont.woff') format('woff'),
+    url('../fonts/oswald-bold-webfont.ttf') format('truetype'),
+    url('../fonts/oswald-bold-webfont.svg#oswaldbold') format('svg');
+}
+@font-face
+{
+    font-family: 'robotobold';
+    font-weight: bold;
+    font-style: normal;
+
+    src: url('../fonts/roboto-bold-webfont.eot');
+    src: url('../fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-bold-webfont.woff') format('woff'),
+    url('../fonts/roboto-bold-webfont.ttf') format('truetype'),
+    url('../fonts/roboto-bold-webfont.svg#robotobold') format('svg');
+}
+@font-face
+{
+    font-family: 'robotoitalic';
+    font-weight: normal;
+    font-style: italic;
+
+    src: url('../fonts/roboto-italic-webfont.eot');
+    src: url('../fonts/roboto-italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/roboto-italic-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-italic-webfont.woff') format('woff'),
+    url('../fonts/roboto-italic-webfont.ttf') format('truetype'),
+    url('../fonts/roboto-italic-webfont.svg#robotoitalic') format('svg');
+}
+@font-face
+{
+    font-family: 'robotoregular';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/roboto-regular-webfont.eot');
+    src: url('../fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-regular-webfont.woff') format('woff'),
+    url('../fonts/roboto-regular-webfont.ttf') format('truetype'),
+    url('../fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
 body
 {
-    font-family: 'Microsoft Sans Serif';
+    font-family: oswaldregular;
 
-    color: #fff;
+    padding-top: 80px;
+
+    background-color: #083A57;
 }
-
-header
+header .menu
 {
     position: fixed;
-    z-index: 100;
     top: 0;
     left: 0;
 
-    width: 100%;
-    height: 60px;
-
-    background-color: rgba(127, 127, 127, .9);
-}
-
-header h1
-{
-    font-family: 'sport_centerregular';
-    font-size: 60px;
-
-    position: absolute;
-    left: 30px;
-}
-
-.registrarse
-{
-    position: absolute;
-    top: 10px;
-    right: 200px;
-
-    padding: 10px 20px;
-
-    text-decoration: none;
-
-    color: #fff;
-    border: 2px solid white;
-    border-radius: 20px;
-}
-.login
-{
-    position: absolute;
-    top: 10px;
-    right: 30px;
-
-    padding: 10px 20px;
-
-    text-decoration: none;
-
-    color: #fff;
-    border: 2px solid white;
-    border-radius: 20px;
-}
-.login img
-{
-    display: none;
-}
-
-.fondo img
-{
-    position: fixed;
-    z-index: -100;
-    top: 50%;
-    left: 50%;
-
-    width: auto;
-    min-width: 100%;
-    height: auto;
-    min-height: 100%;
-
-    transform: translateX(-50%) translateY(-50%);
-}
-
-.fondo1,
-.fondo1-responsive .fondo2,
-.fondo2-responsive
-{
-    position: absolute;
-    z-index: -99;
+    display: flex;
 
     width: 100%;
-    height: 100vh;
+
+    background-color: #fff;
+
+    justify-content: space-between;
 }
-
-.fondo1 img
+header .menu .titulo
 {
-    position: absolute;
-    z-index: -99;
-    top: 0;
+    font-family: oswaldbold;
+    font-size: 32px;
 
-    width: 100%;
-    height: 100%;
+    overflow: hidden;
 
-    opacity: 1;
-}
-
-.fondo1-responsive img
-{
-    position: absolute;
-    z-index: -99;
-    top: 0;
-
-    width: 100%;
-    height: 100%;
-
-    opacity: 0;
-}
-
-.fondo2 img
-{
-    position: absolute;
-    z-index: -99;
-    top: 100vh;
-
-    width: 100%;
-    height: 100%;
-
-    opacity: 1;
-}
-
-.fondo2-responsive img
-{
-    position: absolute;
-    z-index: -99;
-    top: 0;
-
-    width: 100%;
-    height: 100%;
-
-    opacity: 0;
-}
-
-main
-{
-    min-height: 100vh;
-}
-
-section
-{
-    height: 100vh;
-}
-
-.pag1 .contenido
-{
-    height: 100vh;
-}
-
-.pag1 .contenido h1
-{
-    font-size: 4.5vw;
-
-    display: block;
-
-    min-width: 10vh;
-    max-width: 30%;
-    padding-top: 200px;
-    padding-left: 30px;
-}
-
-.pag1 .contenido span
-{
-    font-size: 1.1vw;
-
-    display: block;
-
-    min-width: 10vh;
-    max-width: 30%;
-    padding-top: 50px;
-    padding-left: 30px;
-}
-
-.pag1 .contenido a
-{
-    font-size: 1.1vw;
-    line-height: 3vw;
-
-    display: block;
-
-    min-width: 10vh;
-    max-width: 20%;
-    height: 3vw;
-    margin-top: 50px;
-    margin-left: 30px;
+    padding: 15px;
 
     text-align: center;
     text-decoration: none;
 
-    color: #fff;
-    border: .2vw solid white;
-    border-radius: 50vw;
+    color: #083A57;
+
+    flex: 0 1 auto;
 }
-
-.pag1 .contenido a img
+header .menu img
 {
-    text-align: center;
-}
-
-.pag2 .contenido
-{
-    height: 100vh;
-}
-
-.pag2 .contenido .parte1
-{
-    height: 50vh;
-}
-
-.pag2 .contenido .parte2
-{
-    height: 50vh;
-}
-
-.pag2 .contenido .parte1 .texto
-{
-    width: 40%;
-    height: 100%;
-}
-
-.pag2 .contenido .parte2 .texto
-{
-    width: 40%;
-    height: 100%;
-    margin-left: 60%;
-
-    text-align: right;
-}
-
-.pag2 .contenido .parte1 .texto h1
-{
-    font-size: 3vw;
-
-    display: block;
-
-    padding-top: 8vw;
-    padding-left: 30px;
-}
-
-.pag2 .contenido .parte1 .texto span
-{
-    font-size: 1.1vw;
-
-    display: block;
-
-    padding-top: 50px;
-    padding-left: 30px;
-}
-
-.pag2 .contenido .parte1 .mobile img
-{
-    position: absolute;
-    right: 20vh;
-    bottom: -50vh;
-
-    height: 20vw;
-    min-height: 25%;
-}
-
-.pag2 .contenido .parte2 .texto h1
-{
-    font-size: 3vw;
-
-    display: block;
-
-    padding-top: 8vw;
-    padding-right: 30px;
-}
-
-.pag2 .contenido .parte2 .texto span
-{
-    font-size: 1.1vw;
-
-    display: block;
-
-    padding-top: 50px;
-    padding-right: 30px;
-}
-
-.pag2 .contenido .parte2 .mobile img
-{
-    position: absolute;
-    bottom: -100vh;
-    left: 20vh;
-
-    height: 20vw;
-    min-height: 25%;
-}
-
-.down
-{
-    position: absolute;
-    bottom: 30px;
-
-    width: 100%;
-
-    text-align: center;
-}
-
-.down img
-{
-    width: 9vw;
-    max-width: 50px;
+    width: 27px;
+    height: 27px;
+    margin: 15.5px;
+    padding: 8px;
 
     cursor: pointer;
+
+    border: 3px solid #083A57;
+    border-radius: 10px;
+
+    flex: 0 0 auto;
 }
-
-footer
+header
 {
-    height: 50vh;
-
-    background-color: #82807f;
-}
-
-footer .network
-{
-    position: absolute;
-    right: 30px;
-}
-
-footer .network img
-{
-    position: relative;
-    top: 30px;
-
-    width: 2vw;
-    margin: 0 1vw;
-}
-
-.registrarse-footer
-{
-    position: absolute;
-    bottom: -130vh;
-
     width: 100%;
-
-    text-align: center;
 }
-
-.registrarse-footer a
+header nav
 {
-    font-size: 1.1vw;
-    line-height: 3vw;
+    font-family: oswaldbold;
 
-    display: block;
+    position: fixed;
+    right: 100%;
 
-    min-width: 10vh;
-    max-width: 20%;
-    height: 3vw;
-    margin: 0 auto;
+    overflow-y: scroll;
 
-    text-align: center;
-    text-decoration: none;
+    width: 30%;
+    min-width: 250px;
+    height: calc(100% - 80px);
+    margin: 0;
 
-    color: #fff;
-    border: .2vw solid white;
-    border-radius: 50vw;
-}
-
-footer span:nth-of-type(1)
-{
-    font-family: 'sport_centerregular';
-    font-size: 5vw;
-
-    position: absolute;
-    bottom: -110vh;
-
-    display: block;
-
-    width: 100%;
-
-    text-align: center;
-}
-
-footer span:nth-of-type(2)
-{
-    font-size: 1.1vw;
-
-    position: absolute;
-    bottom: -120vh;
-
-    display: block;
-
-    width: 100%;
-
-    text-align: center;
-}
-
-footer span:nth-of-type(3)
-{
-    font-size: 1.1vw;
-
-    position: absolute;
-    bottom: -145vh;
-
-    display: block;
-
-    width: 100%;
-
-    text-align: center;
-}
-
-footer span:nth-of-type(4)
-{
-    font-size: 1.1vw;
-
-    position: absolute;
-    bottom: -149vh;
-
-    display: block;
-
-    width: 100%;
-
-    text-align: center;
-}
-
-.contenido a:hover
-{
-    color: #8d0202;
     background-color: #fff;
 }
-
-@media screen and (min-width: 2000px)
+header nav ul
 {
-    .registrarse
-    {
-        top: 5px;
-        right: 300px;
-    }
-    .login
-    {
-        top: 5px;
-    }
-    .pag2 .contenido .parte1 .mobile img
-    {
-        right: 5vh;
-    }
-    .pag2 .contenido .parte2 .mobile img
-    {
-        left: 5vh;
-    }
+    list-style: none;
+}
+header nav ul li
+{
+    position: relative;
+
+    display: block;
+
+    cursor: pointer;
+
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+}
+header nav ul li:first-child
+{
+    border-top: 1px solid #000;
+}
+header nav ul li a
+{
+    display: block;
+
+    padding: 20px;
+
+    text-decoration: none;
+
+    color: #000;
+}
+header nav ul li img
+{
+    position: absolute;
+    top: 24.5px;
+    right: 10px;
+
+    width: 16px;
+    height: 16px;
+
+    transition: .5s ease-in-out;
+}
+header nav ul li .children
+{
+    position: relative;
+
+    display: none;
+
+    width: 100%;
+
+    background-color: #6a6a6a;
+}
+header nav ul li .children li
+{
+    display: block;
+    overflow: hidden;
+
+    transition: .3s ease-in-out;
+
+    border-right: none;
+    border-bottom: 1px solid #fff;
+}
+header nav ul li .children li:last-child
+{
+    border-bottom: none;
+}
+header nav ul li .children li a
+{
+    font-family: oswaldregular;
+
+    display: block;
+
+    margin-left: 20px;
+
+    color: #fff;
+}
+main
+{
+    font-family: robotoregular;
+
+    min-height: 200px;
+    padding-top: 80px;
+
+    text-align: center;
+
+    color: #fff;
+}
+h1
+{
+    font-family: oswaldregular;
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+.php
+{
+    overflow-y: scroll;
+
+    height: calc(100vh - 300px);
+    margin: 0 20px;
+    padding: 10px;
+
+    text-align: left;
+
+    background-color: #fff;
+}
+.php h1
+{
+    color: #000;
+}
+footer
+{
+    font-size: 10px;
+
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+
+    color: #fff;
+}
+/* Transiciones y transformaciones */
+header nav ul li .children li:hover
+{
+    transition: .3s ease-in-out;
+
+    background-color: #083A57;
+}
+header nav ul li.girar img
+{
+    transition: .5s ease-in-out;
+    transform: rotate(180deg);
+}
+/* ScrollBar */
+::-webkit-scrollbar
+{
+    width: 12px;
 }
 
-@media screen and (max-width: 1000px)
+::-webkit-scrollbar-track
 {
-    .pag2 .contenido .parte1 .mobile img
-    {
-        right: 10vh;
-    }
-    .pag2 .contenido .parte2 .mobile img
-    {
-        left: 10vh;
-    }
+    background-color: white;
 }
 
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background-color: #ccc;
+}
+/* Hojas de estilo */
 @media screen and (max-width: 800px)
 {
-    header
+    body
     {
-        position: absolute;
+        padding-top: 160px;
+    }
+    header .menu
+    {
+        flex-direction: column-reverse;
 
-        background: none;
+        align-items: center;
     }
-    header h1
+    header .menu .titulo
     {
-        font-size: 80px;
-
-        top: -6px;
+        max-height: 80px;
     }
-    .login
+    header nav
     {
-        top: 5px;
-
-        padding: 0;
-
-        border: none;
-    }
-    .login span
-    {
-        display: none;
-    }
-    .login img
-    {
-        display: block;
-    }
-    .fondo1 img
-    {
-        opacity: 0;
-    }
-    .fondo1-responsive img
-    {
-        opacity: 1;
-    }
-    .fondo2 img
-    {
-        opacity: 0;
-    }
-    .fondo2-responsive img
-    {
-        opacity: 1;
-    }
-    .pag1 .contenido
-    {
-        text-align: center;
-
-        border-bottom: 1px solid #fff;
-    }
-    .pag1 .contenido h1
-    {
-        font-size: 8vw;
-
-        max-width: 80%;
-        margin: 0 auto;
-        padding-top: 150px;
-        padding-left: 0;
-    }
-    .pag1 .contenido span
-    {
-        font-size: 3vw;
-
-        display: block;
-
-        max-width: 80%;
-        margin: 0 auto;
-        padding: 50px 0;
-    }
-    .pag1 .contenido a
-    {
-        font-size: 3vw;
-        line-height: 7vw;
-
-        display: block;
-
-        min-width: 10vh;
-        max-width: 80%;
-        height: 7vw;
-        margin: 0 auto;
-    }
-    .pag2 .contenido .parte1
-    {
-        border-bottom: 1px solid #fff;
-    }
-    .pag2 .contenido .parte1 .texto,
-    .pag2 .contenido .parte2 .texto
-    {
-        width: 100%;
-        margin-left: 0;
-
-        text-align: center;
-    }
-    .pag2 .contenido .parte1 .texto h1,
-    .pag2 .contenido .parte2 .texto h1
-    {
-        font-size: 5vw;
-
-        padding-top: 5vw;
-        padding-right: 0;
-        padding-left: 0;
-    }
-    .pag2 .contenido .parte1 .texto span,
-    .pag2 .contenido .parte2 .texto span
-    {
-        font-size: 2vw;
-
-        padding-top: 2vw;
-        padding-right: 0;
-        padding-left: 0;
-    }
-    .pag2 .contenido .parte1 .mobile,
-    .pag2 .contenido .parte2 .mobile
-    {
-        position: absolute;
+        position: fixed;
 
         width: 100%;
+        height: calc(100% - 160px);
 
-        text-align: center;
+        border-bottom: 1px solid #000;
     }
-    .pag2 .contenido .parte1 .mobile img,
-    .pag2 .contenido .parte2 .mobile img
+    .php
     {
-        position: relative;
-        right: 0;
-        bottom: 30vw;
-        left: 0;
-
-        height: 30vw;
-        min-height: 10%;
-
-        text-align: center;
-    }
-    .registrarse
-    {
-        display: none;
-    }
-    .down
-    {
-        display: none;
-    }
-    .registrarse-footer
-    {
-        bottom: -130vh;
-    }
-    .registrarse-footer a
-    {
-        font-size: 3vw;
-        line-height: 7vw;
-
-        display: block;
-
-        min-width: 10vh;
-        max-width: 80%;
-        height: 7vw;
-        margin: 0 auto;
-    }
-    footer .network
-    {
-        right: 1vw;
-    }
-    footer .network img
-    {
-        top: 2vw;
-
-        width: 3vw;
-        margin: 0 1vw;
-    }
-    footer span:nth-of-type(1)
-    {
-        font-size: 15vw;
-
-        bottom: -115vh;
-    }
-    footer span:nth-of-type(2)
-    {
-        font-size: 3vw;
-
-        bottom: -120vh;
-    }
-    footer span:nth-of-type(3)
-    {
-        font-size: 3vw;
-
-        bottom: -144vh;
-    }
-    footer span:nth-of-type(4)
-    {
-        font-size: 3vw;
-
-        bottom: -149vh;
+        font-size: 12px;
     }
 }
-
+@media screen and (max-width: 700px)
+{
+}
 @media screen and (max-width: 500px)
 {
-    header
+    body
     {
-        position: absolute;
-
-        background: none;
-    }
-    header h1
-    {
-        font-size: 60px;
-
-        top: 0;
-    }
-    .login
-    {
-        top: 8px;
-
-        padding: 0;
-
-        border: none;
-    }
-    .login img
-    {
-        width: 40px;
-    }
-    .pag1 .contenido h1
-    {
-        font-size: 12vw;
-
         padding-top: 150px;
     }
-    .pag1 .contenido span
+    header nav
     {
-        font-size: 5vw;
+        height: calc(100% - 150px);
     }
-    .pag1 .contenido a
+    header .menu .titulo
     {
-        font-size: 5vw;
-        line-height: 8vw;
-
-        height: 8vw;
+        font-size: 26px;
     }
-    .pag2 .contenido .parte1 .texto h1,
-    .pag2 .contenido .parte2 .texto h1
+    h1
     {
-        font-size: 8vw;
+        font-size: 26px;
     }
-    .pag2 .contenido .parte1 .texto span,
-    .pag2 .contenido .parte2 .texto span
+    .php
     {
-        font-size: 4vw;
-
-        padding-top: 4vw;
-    }
-    .pag2 .contenido .parte1 .mobile img,
-    .pag2 .contenido .parte2 .mobile img
-    {
-        bottom: 30vw;
-
-        height: 30vw;
-    }
-    .registrarse-footer a
-    {
-        font-size: 5vw;
-        line-height: 8vw;
-
-        height: 8vw;
-    }
-    footer .network
-    {
-        display: none;
-    }
-    footer span:nth-of-type(1)
-    {
-        font-size: 20vw;
-
-        bottom: -115vh;
-    }
-    footer span:nth-of-type(2)
-    {
-        font-size: 5vw;
-
-        bottom: -120vh;
-    }
-    footer span:nth-of-type(3)
-    {
-        font-size: 4vw;
-
-        bottom: -144vh;
-    }
-    footer span:nth-of-type(4)
-    {
-        font-size: 4vw;
-
-        bottom: -149vh;
+        font-size: 10px;
     }
 }
-
-@media screen and (max-width: 700px) and (orientation:landscape)
+@media screen and (max-width: 400px)
 {
-    .fondo img
+    body
     {
-        top: 0;
-        left: 0;
-
-        width: 100%;
-        min-width: 0;
-        height: 100vh;
-        min-height: 0;
-
-        transform: none;
+        padding-top: 140px;
     }
-    .pag1 .contenido
+    header nav
     {
-        height: 100vh;
+        height: calc(100% - 140px);
     }
-    .pag1 .contenido h1
+    header .menu .titulo
     {
-        font-size: 5vw;
-
-        padding-top: 75px;
+        font-size: 20px;
     }
-    .pag1 .contenido span
+}
+@media screen and (max-width: 300px)
+{
+    body
     {
-        font-size: 2vw;
-
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 130px;
     }
-    .pag1 .contenido a
+    header nav
     {
-        font-size: 4vw;
-        line-height: 7vw;
-
-        height: 7vw;
-        /*padding-top: 20px;*/
+        height: calc(100% - 130px);
     }
-    .down
+    header .menu .titulo
     {
-        display: none;
+        font-size: 12.95px;
     }
-    .pag2
+    h1
     {
-        display: none;
+        font-size: 12.95px;
     }
-    footer
+    .php
     {
-        display: none;
+        font-size: 8px;
     }
 }
