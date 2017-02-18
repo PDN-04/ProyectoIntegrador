@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="icon" type="image/png" href="media/images/favicon.png" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/effects.css" />
+    <link rel="stylesheet" href="css/elements.css" />
+    <link rel="stylesheet" href="css/registro.css" />
+    <title></title>
+</head>
+
+<body>
+    <header>
+        <h1>ALIMA</h1>
+    </header>
+    <main>
+        <div class="fondo">
+            <img src="media/images/background.jpg" alt="">
+        </div>
+        <section class="pag1">
+            <div class="fondo1">
+                <img src="media/images/background-login.png" alt="">
+            </div>
+            <div class="fondo1-responsive">
+                <img src="media/images/background2-responsive.png" alt="">
+            </div>
+            <div class="fondo2-responsive">
+                <img src="media/images/background2-responsive.png" alt="">
+            </div>
+            <div class="horizontal">
+                <p>Por favor, coloque su dispositivo verticalmente para seguir con el registro</p>
+            </div>
+            <div class="contenido">
+                <h1>Registrarse</h1>
+                <form>
+                    <div class="parte1">
+                        <p>
+                            <label>Datos personales</label>
+                            <input type="text" placeholder="Usuario">
+                            <br>
+                            <input type="password" placeholder="Contraseña">
+                            <br>
+                            <input type="password" placeholder="Repetir contraseña">
+                            <br>
+                            <input type="text" placeholder="E-mail">
+                            <br>
+                            <input type="text" placeholder="Nombre y Apellidos">
+                            <br>
+                        </p>
+                        <p>
+                            <label>Fecha de nacimiento</label>
+                            <input id="dia" type="text" placeholder="DD">
+                            <input id="mes" type="text" placeholder="MM">
+                            <input id="anyo" type="text" placeholder="AAAA">
+                        </p>
+                        <p>
+                            <label>Estatura</label>
+                            <input class="estatura" type="range" min="100" max="250" value="175"><span id="estatura">175 cm</span>
+                        </p>
+                        <p>
+                            <label>Peso</label>
+                            <input class="peso" type="range" min="30" max="250" value="75"><span id="peso">75 kg</span>
+                        </p>
+                    </div>
+                    <div class="parte2">
+                        <div class="corredor">
+                            <label>¿Qué tipo de corredor eres?</label>
+                            <ul id="tabs">
+                                <li><a href="#" class="tab1">Casual</a></li>
+                                <li><a href="#" class="tab2">Medio fondo</a></li>
+                                <li><a href="#" class="tab3">Fondo</a></li>
+                                <li><a href="#" class="tab4">Trail</a></li>
+                            </ul>
+                            <div class="opciones">
+                                <div id="tab1">¿Nuevo en esto?</div>
+                                <div id="tab2">
+                                    <label>¿Mejor tiempo en 5 Km?</label>
+                                    <input type="text" placeholder="Tu tiempo en minutos">
+                                    <label>¿Mejor tiempo en 10 Km?</label>
+                                    <input type="text" placeholder="Tu tiempo en minutos">
+                                    <label>¿Mejor tiempo en media maratón?</label>
+                                    <input type="text" placeholder="Tu tiempo en minutos">
+                                </div>
+                                <div id="tab3">
+                                    <label>¿Mejor tiempo en media maratón?</label>
+                                    <input type="text" placeholder="Tu tiempo en minutos">
+                                    <label>¿Mejor tiempo en maratón?</label>
+                                    <input type="text" placeholder="Tu tiempo en minutos">
+                                </div>
+                                <div id="tab4">
+                                    <label>¿Nombre de la carrera más larga?</label>
+                                    <input type="text" placeholder="Nombre de la carrera">
+                                    <label>¿Distancia?</label>
+                                    <input type="text" placeholder="Distancia de la en km">
+                                    <label>¿Tiempo empleado?</label>
+                                    <input type="text" placeholder="Tu tiempo en minutos">
+                                    <label>¿Desnivel?</label>
+                                    <input type="text" placeholder="Desnivel en metros">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardio">
+                            <label>Zonas de frecuencia cardiaca</label>
+                            <div class="zonas">
+                                <label>Sprint</label>
+                                <input type="text" id="sprint" value="">
+                                <label>Velocidad</label>
+                                <input type="text">
+                                <label>Cardio</label>
+                                <input type="text">
+                                <label>Fitness</label>
+                                <input type="text">
+                                <label>Sencillo</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="registrarse">
+                            <a href="#">¡Registrarse!</a>
+                        </div>
+                    </div>
+                    <div class="parte3">
+                        <label>Tabla orientativa de frecuencia cardiaca</label>
+                        <img src="media/images/tabla.png" alt="">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="network">
+            <a href="#"><img src="media/images/instagram.png" alt=""></a>
+            <a href="#"><img src="media/images/facebook.png" alt=""></a>
+            <a href="#"><img src="media/images/twitter.png" alt=""></a>
+        </div>
+        <span>ALIMA</span>
+        <div class="registrarse-footer">
+            <a href="#">¡Empieza ahora gratis!</a>
+        </div>
+        <span>Entonces... ¿Te apuntas?</span>
+        <span>Contacto: domingueznavarropablo@gmail.com</span>
+        <span>Copyright © 2017 | Pablo Domínguez Navarro</span>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,805 @@
+body
+{
+    font-family: 'Microsoft Sans Serif';
+
+    color: #fff;
+}
+
+header
+{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 60px;
+}
+
+header h1
+{
+    font-family: 'sport_centerregular';
+    font-size: 60px;
+
+    position: absolute;
+    left: 30px;
+}
+
+.fondo img
+{
+    position: fixed;
+    z-index: -100;
+    top: 50%;
+    left: 50%;
+
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.fondo1,
+.fondo1-responsive .fondo2,
+.fondo2-responsive
+{
+    position: absolute;
+    z-index: -99;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.fondo1 img
+{
+    position: absolute;
+    z-index: -99;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 1;
+}
+
+.fondo1-responsive img
+{
+    position: absolute;
+    z-index: -99;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+}
+.fondo2-responsive img
+{
+    position: absolute;
+    z-index: -99;
+    top: 100vh;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+}
+.horizontal {display: none;}
+main
+{
+    min-height: 100vh;
+}
+
+section
+{
+    height: 100vh;
+}
+
+.pag1 .contenido
+{
+    height: 100vh;
+}
+
+.pag1 .contenido h1
+{
+    font-size: 3.5vw;
+
+    display: block;
+
+    min-width: 10vh;
+    max-width: 30%;
+    padding-top: 100px;
+    padding-left: 30px;
+}
+
+.pag1 .contenido form
+{
+    display: block;
+
+    min-width: 10vh;
+    max-width: 25%;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.pag1 .contenido p
+{
+    margin: 25px 0;
+}
+
+.pag1 .contenido p:nth-of-type(1)
+{
+    margin: 0;
+}
+
+.pag1 .contenido .parte1
+{
+    position: absolute;
+}
+
+.pag1 .contenido .parte1 label
+{
+    font-size: 15px;
+
+    display: block;
+
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
+.pag1 .contenido .parte1 p:nth-of-type(1) input[type=text],
+.pag1 .contenido .parte1 p:nth-of-type(1) input[type=password]
+{
+    font-size: 15px;
+
+    width: 20vw;
+    margin: 5px 0;
+    padding: 10px;
+    padding-left: 20px;
+
+    border: none;
+    border-radius: 20px;
+}
+
+.pag1 .contenido .parte1 p:nth-of-type(2) input[type=text]
+{
+    padding: 10px;
+    padding-left: 15px;
+
+    border: none;
+    border-radius: 20px;
+}
+
+.pag1 .contenido .parte1 p:nth-of-type(2) input[type=text]:nth-of-type(1)
+{
+    width: 4vw;
+    margin-top: 5px;
+}
+
+.pag1 .contenido .parte1 p:nth-of-type(2) input[type=text]:nth-of-type(2)
+{
+    width: 4vw;
+    margin-top: 5px;
+}
+
+.pag1 .contenido .parte1 p:nth-of-type(2) input[type=text]:nth-of-type(3)
+{
+    width: 5vw;
+    margin-top: 5px;
+}
+
+.pag1 .contenido .parte1 input[type=range]
+{
+    width: 15vw;
+    margin: 10.2px 0;
+
+    background: none;
+
+    -webkit-appearance: none;
+}
+
+.pag1 .contenido .parte1 span
+{
+    font-size: 15px;
+
+    position: relative;
+    top: 4px;
+    left: 10px;
+}
+
+.pag1 .contenido .parte2
+{
+    position: absolute;
+    left: 30%;
+}
+
+.pag1 .contenido .parte2 .corredor > label
+{
+    font-size: 15px;
+
+    display: block;
+
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
+#tabs
+{
+    display: flex;
+    overflow: hidden;
+
+    list-style: none;
+
+    flex: 1 1 auto;
+}
+
+#tabs li
+{
+    margin-top: 5px;
+
+    color: #fff;
+    background: #82807f;
+}
+
+#tabs li:first-child
+{
+    border-radius: 20px 0 0 0;
+}
+
+#tabs li:last-child
+{
+    border-radius: 0 20px 0 0;
+}
+
+#tabs li:first-child a
+{
+    border-radius: 20px 0 0 0;
+}
+
+#tabs li:last-child a
+{
+    border-radius: 0 20px 0 0;
+}
+
+#tabs a
+{
+    display: inline-block;
+
+    padding: 10px;
+
+    text-decoration: none;
+
+    color: #fff;
+}
+
+#tabs #current
+{
+    z-index: 3;
+
+    color: #8d0202;
+    background-color: #fff;
+}
+
+#tabs #current a
+{
+    color: #8d0202;
+}
+
+.opciones
+{
+    position: relative;
+    z-index: 2;
+
+    padding: 15px 10px;
+
+    text-align: center;
+
+    color: #000;
+    border-radius: 0 0 20px 20px;
+    background: #fff;
+}
+
+.opciones label
+{
+    display: block;
+
+    margin: 5px 0;
+    padding-left: 0;
+}
+
+.opciones input
+{
+    display: block;
+
+    margin: 0 auto;
+}
+.pag1 .contenido .parte2 .cardio
+{
+    margin: 25px 0;
+}
+.pag1 .contenido .parte2 .cardio > label
+{
+    font-size: 15px;
+
+    display: block;
+
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
+.zonas
+{
+    position: relative;
+    z-index: 2;
+
+    margin-top: 10px;
+    padding: 15px 10px;
+
+    text-align: center;
+
+    color: #000;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.zonas label
+{
+    display: block;
+
+    margin: 5px 0;
+    padding-left: 0;
+}
+
+.zonas input
+{
+    display: block;
+
+    margin: 0 auto;
+}
+
+.registrarse
+{
+    width: 100%;
+    margin-top: 10px;
+
+    text-align: center;
+}
+
+.registrarse a
+{
+    font-size: 1.1vw;
+    line-height: 3vw;
+
+    display: block;
+
+    min-width: 10vh;
+    height: 3vw;
+    margin: 0 auto;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #fff;
+    border: .2vw solid white;
+    border-radius: 50vw;
+}
+
+.pag1 .contenido .parte3
+{
+    position: absolute;
+    left: 70%;
+}
+
+.pag1 .contenido .parte3 > label
+{
+    font-size: 15px;
+
+    display: block;
+
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
+.pag1 .contenido .parte3 > img
+{
+    width: 90%;
+    margin-top: 5px;
+}
+
+footer
+{
+    height: 50vh;
+
+    background-color: #82807f;
+}
+
+footer .network
+{
+    position: absolute;
+    right: 30px;
+}
+
+footer .network img
+{
+    position: relative;
+    top: 30px;
+
+    width: 2vw;
+    margin: 0 1vw;
+}
+
+.registrarse-footer
+{
+    position: absolute;
+    bottom: -30vh;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+.registrarse-footer a
+{
+    font-size: 1.1vw;
+    line-height: 3vw;
+
+    display: block;
+
+    min-width: 10vh;
+    max-width: 20%;
+    height: 3vw;
+    margin: 0 auto;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #fff;
+    border: .2vw solid white;
+    border-radius: 50vw;
+}
+
+footer span:nth-of-type(1)
+{
+    font-family: 'sport_centerregular';
+    font-size: 5vw;
+
+    position: absolute;
+    bottom: -10vh;
+
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+footer span:nth-of-type(2)
+{
+    font-size: 1.1vw;
+
+    position: absolute;
+    bottom: -20vh;
+
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+footer span:nth-of-type(3)
+{
+    font-size: 1.1vw;
+
+    position: absolute;
+    bottom: -45vh;
+
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+footer span:nth-of-type(4)
+{
+    font-size: 1.1vw;
+
+    position: absolute;
+    bottom: -49vh;
+
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+@media screen and (max-width: 800px)
+{
+    header
+    {
+        position: absolute;
+    }
+    header h1
+    {
+        font-size: 80px;
+
+        top: -6px;
+    }
+    .fondo1 img
+    {
+        opacity: 0;
+    }
+    .fondo1-responsive img
+    {
+        opacity: 1;
+    }
+    .fondo2-responsive img
+    {
+        display: block;
+
+        opacity: 1;
+    }
+    section
+    {
+        height: 200vh;
+    }
+    .pag1 .contenido
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .pag1 .contenido h1
+    {
+        font-size: 8vw;
+
+        max-width: 80%;
+        margin: 0 auto;
+        padding-top: 150px;
+        padding-left: 0;
+    }
+    .pag1 .contenido form
+    {
+        width: 80%;
+        max-width: none;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    .pag1 .contenido .parte1
+    {
+        position: static;
+    }
+    .pag1 .contenido .parte1 label
+    {
+        padding-left: 0;
+
+        text-align: center;
+    }
+    .pag1 .contenido .parte1 p
+    {
+        text-align: center;
+    }
+    .pag1 .contenido .parte1 p:nth-of-type(1) input[type=text],
+    .pag1 .contenido .parte1 p:nth-of-type(1) input[type=password]
+    {
+        width: 100%;
+        padding: 10px 0;
+
+        text-align: center;
+    }
+
+    .pag1 .contenido .parte1 p:nth-of-type(2) input[type=text]:nth-of-type(1)
+    {
+        width: 20%;
+        padding: 10px;
+
+        text-align: center;
+    }
+
+    .pag1 .contenido .parte1 p:nth-of-type(2) input[type=text]:nth-of-type(2)
+    {
+        width: 20%;
+        padding: 10px;
+
+        text-align: center;
+    }
+
+    .pag1 .contenido .parte1 p:nth-of-type(2) input[type=text]:nth-of-type(3)
+    {
+        width: 30%;
+        padding: 10px;
+
+        text-align: center;
+    }
+
+    .pag1 .contenido .parte1 input[type=range]
+    {
+        width: 80%;
+    }
+    #tabs li
+    {
+        margin-top: 5px;
+
+        text-align: center;
+
+        flex: 1 1 auto;
+    }
+    .registrarse
+    {
+        margin-top: 50px;
+    }
+
+    .registrarse a
+    {
+        font-size: 3vw;
+        line-height: 7vw;
+
+        display: block;
+
+        min-width: 10vh;
+        max-width: 80%;
+        height: 7vw;
+        margin: 0 auto;
+    }
+
+    .pag1 .contenido .parte2
+    {
+        position: static;
+    }
+    .pag1 .contenido .parte3
+    {
+        display: none;
+    }
+    .registrarse-footer
+    {
+        bottom: -130vh;
+    }
+    .registrarse-footer a
+    {
+        font-size: 3vw;
+        line-height: 7vw;
+
+        display: block;
+
+        min-width: 10vh;
+        max-width: 80%;
+        height: 7vw;
+        margin: 0 auto;
+    }
+    footer .network
+    {
+        right: 1vw;
+    }
+    footer .network img
+    {
+        top: 2vw;
+
+        width: 3vw;
+        margin: 0 1vw;
+    }
+    footer span:nth-of-type(1)
+    {
+        font-size: 15vw;
+
+        bottom: -115vh;
+    }
+    footer span:nth-of-type(2)
+    {
+        font-size: 3vw;
+
+        bottom: -120vh;
+    }
+    footer span:nth-of-type(3)
+    {
+        font-size: 3vw;
+
+        bottom: -144vh;
+    }
+    footer span:nth-of-type(4)
+    {
+        font-size: 3vw;
+
+        bottom: -149vh;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    body
+    {
+        font-size: 10px;
+    }
+    header
+    {
+        position: absolute;
+    }
+    header h1
+    {
+        font-size: 60px;
+
+        top: 0;
+    }
+    .registrarse-footer a
+    {
+        font-size: 5vw;
+        line-height: 8vw;
+
+        height: 8vw;
+    }
+    footer .network
+    {
+        display: none;
+    }
+    footer span:nth-of-type(1)
+    {
+        font-size: 20vw;
+
+        bottom: -115vh;
+    }
+    footer span:nth-of-type(2)
+    {
+        font-size: 5vw;
+
+        bottom: -120vh;
+    }
+    footer span:nth-of-type(3)
+    {
+        font-size: 4vw;
+
+        bottom: -144vh;
+    }
+    footer span:nth-of-type(4)
+    {
+        font-size: 4vw;
+
+        bottom: -149vh;
+    }
+}
+
+@media screen and (max-width: 700px) and (orientation:landscape)
+{
+    .fondo img
+    {
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        min-width: 0;
+        height: 100vh;
+        min-height: 0;
+
+        transform: none;
+    }
+    main {
+    	min-height: 0;
+    }
+    section {
+    	height: 0;
+    }
+    .fondo1
+    {
+        display: none;
+    }
+    .fondo2-responsive {
+    	display: none;
+    }
+    .pag1 .contenido
+    {
+        display: none;
+    }
+    .horizontal
+    {
+        margin-top: 25%;
+        font-size: 5vw;
+        display: block;
+        text-align: center;
+    }
+    footer
+    {
+        display: none;
+    }
+}
