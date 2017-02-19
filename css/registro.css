@@ -87,7 +87,10 @@ header h1
 
     opacity: 0;
 }
-.horizontal {display: none;}
+.horizontal
+{
+    display: none;
+}
 main
 {
     min-height: 100vh;
@@ -109,20 +112,21 @@ section
 
     display: block;
 
-    min-width: 10vh;
-    max-width: 30%;
+    width: 100%;
     padding-top: 100px;
-    padding-left: 30px;
+
+    text-align: center;
 }
 
 .pag1 .contenido form
 {
+    position: relative;
+
     display: block;
 
-    min-width: 10vh;
-    max-width: 25%;
+    width: 80%;
+    margin: 0 auto;
     padding-top: 20px;
-    padding-left: 30px;
 }
 
 .pag1 .contenido p
@@ -138,6 +142,8 @@ section
 .pag1 .contenido .parte1
 {
     position: absolute;
+
+    width: 50%;
 }
 
 .pag1 .contenido .parte1 label
@@ -155,7 +161,7 @@ section
 {
     font-size: 15px;
 
-    width: 20vw;
+    width: 70%;
     margin: 5px 0;
     padding: 10px;
     padding-left: 20px;
@@ -164,7 +170,7 @@ section
     border-radius: 20px;
 }
 
-.pag1 .contenido .parte1 p:nth-of-type(2) input[type=text]
+.pag1 .contenido .parte1 p:nth-of-type(2) input[type=number]
 {
     padding: 10px;
     padding-left: 15px;
@@ -173,27 +179,27 @@ section
     border-radius: 20px;
 }
 
-.pag1 .contenido .parte1 p:nth-of-type(2) input[type=text]:nth-of-type(1)
+.pag1 .contenido .parte1 p:nth-of-type(2) input[type=number]:nth-of-type(1)
 {
-    width: 4vw;
+    width: 15%;
     margin-top: 5px;
 }
 
-.pag1 .contenido .parte1 p:nth-of-type(2) input[type=text]:nth-of-type(2)
+.pag1 .contenido .parte1 p:nth-of-type(2) input[type=number]:nth-of-type(2)
 {
-    width: 4vw;
+    width: 15;
     margin-top: 5px;
 }
 
-.pag1 .contenido .parte1 p:nth-of-type(2) input[type=text]:nth-of-type(3)
+.pag1 .contenido .parte1 p:nth-of-type(2) input[type=number]:nth-of-type(3)
 {
-    width: 5vw;
+    width: 20%;
     margin-top: 5px;
 }
 
 .pag1 .contenido .parte1 input[type=range]
 {
-    width: 15vw;
+    width: 60%;
     margin: 10.2px 0;
 
     background: none;
@@ -213,9 +219,16 @@ section
 .pag1 .contenido .parte2
 {
     position: absolute;
-    left: 30%;
-}
+    left: 50%;
 
+    width: 50%;
+}
+.pag1 .contenido .parte2 .corredor
+{
+    width: 50%;
+    min-width: 320px;
+    margin: 0 auto;
+}
 .pag1 .contenido .parte2 .corredor > label
 {
     font-size: 15px;
@@ -232,16 +245,20 @@ section
     overflow: hidden;
 
     list-style: none;
-
-    flex: 1 1 auto;
 }
 
 #tabs li
 {
     margin-top: 5px;
+    padding: 10px;
+
+    cursor: pointer;
+    text-align: center;
 
     color: #fff;
     background: #82807f;
+
+    flex: 1 1 auto;
 }
 
 #tabs li:first-child
@@ -254,27 +271,6 @@ section
     border-radius: 0 20px 0 0;
 }
 
-#tabs li:first-child a
-{
-    border-radius: 20px 0 0 0;
-}
-
-#tabs li:last-child a
-{
-    border-radius: 0 20px 0 0;
-}
-
-#tabs a
-{
-    display: inline-block;
-
-    padding: 10px;
-
-    text-decoration: none;
-
-    color: #fff;
-}
-
 #tabs #current
 {
     z-index: 3;
@@ -282,12 +278,6 @@ section
     color: #8d0202;
     background-color: #fff;
 }
-
-#tabs #current a
-{
-    color: #8d0202;
-}
-
 .opciones
 {
     position: relative;
@@ -301,7 +291,6 @@ section
     border-radius: 0 0 20px 20px;
     background: #fff;
 }
-
 .opciones label
 {
     display: block;
@@ -309,16 +298,12 @@ section
     margin: 5px 0;
     padding-left: 0;
 }
-
-.opciones input
-{
-    display: block;
-
-    margin: 0 auto;
-}
 .pag1 .contenido .parte2 .cardio
 {
+    width: 50%;
+    min-width: 320px;
     margin: 25px 0;
+    margin: 0 auto;
 }
 .pag1 .contenido .parte2 .cardio > label
 {
@@ -352,14 +337,6 @@ section
     margin: 5px 0;
     padding-left: 0;
 }
-
-.zonas input
-{
-    display: block;
-
-    margin: 0 auto;
-}
-
 .registrarse
 {
     width: 100%;
@@ -368,69 +345,33 @@ section
     text-align: center;
 }
 
-.registrarse a
+.registrarse input
 {
     font-size: 1.1vw;
-    line-height: 3vw;
 
     display: block;
 
-    min-width: 10vh;
+    width: 50%;
+    min-width: 300px;
     height: 3vw;
+    min-height: 40px;
     margin: 0 auto;
 
+    cursor: pointer;
     text-align: center;
     text-decoration: none;
 
     color: #fff;
     border: .2vw solid white;
     border-radius: 50vw;
+    background: none;
 }
-
-.pag1 .contenido .parte3
-{
-    position: absolute;
-    left: 70%;
-}
-
-.pag1 .contenido .parte3 > label
-{
-    font-size: 15px;
-
-    display: block;
-
-    margin: 5px 0;
-    padding-left: 20px;
-}
-
-.pag1 .contenido .parte3 > img
-{
-    width: 90%;
-    margin-top: 5px;
-}
-
 footer
 {
     height: 50vh;
 
     background-color: #82807f;
 }
-
-footer .network
-{
-    position: absolute;
-    right: 30px;
-}
-
-footer .network img
-{
-    position: relative;
-    top: 30px;
-
-    width: 2vw;
-    margin: 0 1vw;
-}
-
 .registrarse-footer
 {
     position: absolute;
@@ -572,6 +513,8 @@ footer span:nth-of-type(4)
     .pag1 .contenido .parte1
     {
         position: static;
+
+        width: 100%;
     }
     .pag1 .contenido .parte1 label
     {
@@ -592,7 +535,7 @@ footer span:nth-of-type(4)
         text-align: center;
     }
 
-    .pag1 .contenido .parte1 p:nth-of-type(2) input[type=text]:nth-of-type(1)
+    .pag1 .contenido .parte1 p:nth-of-type(2) input[type=number]:nth-of-type(1)
     {
         width: 20%;
         padding: 10px;
@@ -600,7 +543,7 @@ footer span:nth-of-type(4)
         text-align: center;
     }
 
-    .pag1 .contenido .parte1 p:nth-of-type(2) input[type=text]:nth-of-type(2)
+    .pag1 .contenido .parte1 p:nth-of-type(2) input[type=number]:nth-of-type(2)
     {
         width: 20%;
         padding: 10px;
@@ -608,7 +551,7 @@ footer span:nth-of-type(4)
         text-align: center;
     }
 
-    .pag1 .contenido .parte1 p:nth-of-type(2) input[type=text]:nth-of-type(3)
+    .pag1 .contenido .parte1 p:nth-of-type(2) input[type=number]:nth-of-type(3)
     {
         width: 30%;
         padding: 10px;
@@ -633,14 +576,14 @@ footer span:nth-of-type(4)
         margin-top: 50px;
     }
 
-    .registrarse a
+    .registrarse input
     {
         font-size: 3vw;
         line-height: 7vw;
 
         display: block;
 
-        min-width: 10vh;
+        min-width: 20vh;
         max-width: 80%;
         height: 7vw;
         margin: 0 auto;
@@ -649,10 +592,16 @@ footer span:nth-of-type(4)
     .pag1 .contenido .parte2
     {
         position: static;
+
+        width: 100%;
     }
-    .pag1 .contenido .parte3
+    .pag1 .contenido .parte2 .corredor
     {
-        display: none;
+        width: 100%;
+    }
+    .pag1 .contenido .parte2 .cardio
+    {
+        width: 100%;
     }
     .registrarse-footer
     {
@@ -669,17 +618,6 @@ footer span:nth-of-type(4)
         max-width: 80%;
         height: 7vw;
         margin: 0 auto;
-    }
-    footer .network
-    {
-        right: 1vw;
-    }
-    footer .network img
-    {
-        top: 2vw;
-
-        width: 3vw;
-        margin: 0 1vw;
     }
     footer span:nth-of-type(1)
     {
@@ -730,10 +668,7 @@ footer span:nth-of-type(4)
 
         height: 8vw;
     }
-    footer .network
-    {
-        display: none;
-    }
+
     footer span:nth-of-type(1)
     {
         font-size: 20vw;
@@ -774,18 +709,21 @@ footer span:nth-of-type(4)
 
         transform: none;
     }
-    main {
-    	min-height: 0;
+    main
+    {
+        min-height: 0;
     }
-    section {
-    	height: 0;
+    section
+    {
+        height: 0;
     }
     .fondo1
     {
         display: none;
     }
-    .fondo2-responsive {
-    	display: none;
+    .fondo2-responsive
+    {
+        display: none;
     }
     .pag1 .contenido
     {
@@ -793,9 +731,12 @@ footer span:nth-of-type(4)
     }
     .horizontal
     {
-        margin-top: 25%;
         font-size: 5vw;
+
         display: block;
+
+        margin-top: 25%;
+
         text-align: center;
     }
     footer

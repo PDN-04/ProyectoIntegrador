@@ -4,7 +4,6 @@ body
 
     color: #fff;
 }
-
 header
 {
     position: absolute;
@@ -15,7 +14,6 @@ header
     width: 100%;
     height: 60px;
 }
-
 header h1
 {
     font-family: 'sport_centerregular';
@@ -24,7 +22,6 @@ header h1
     position: absolute;
     left: 30px;
 }
-
 .registrarse
 {
     position: absolute;
@@ -37,7 +34,6 @@ header h1
 
     color: #8d0202;
     text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff;
-
 }
 .login
 {
@@ -56,7 +52,6 @@ header h1
 {
     display: none;
 }
-
 .fondo img
 {
     position: fixed;
@@ -71,7 +66,6 @@ header h1
 
     transform: translateX(-50%) translateY(-50%);
 }
-
 .fondo1,
 .fondo1-responsive .fondo2,
 .fondo2-responsive
@@ -82,7 +76,6 @@ header h1
     width: 100%;
     height: 100vh;
 }
-
 .fondo1 img
 {
     position: absolute;
@@ -94,7 +87,6 @@ header h1
 
     opacity: 1;
 }
-
 .fondo1-responsive img
 {
     position: absolute;
@@ -106,7 +98,6 @@ header h1
 
     opacity: 0;
 }
-
 .fondo2 img
 {
     position: absolute;
@@ -118,7 +109,6 @@ header h1
 
     opacity: 1;
 }
-
 .fondo2-responsive img
 {
     position: absolute;
@@ -130,22 +120,120 @@ header h1
 
     opacity: 0;
 }
-
 main
 {
     min-height: 100vh;
 }
+.login-form
+{
+    position: fixed;
+    z-index: 500;
+    top: -100%;
+    left: calc(50% - 15vw - 2px);
 
+    width: 25vw;
+    height: 25vw;
+
+    text-align: center;
+
+    border: 2px solid #fff;
+    background-color: #82807f;
+}
+.login-form h1
+{
+    font-size: 2.5vw;
+
+    position: absolute;
+    bottom: 20vw;
+
+    width: 100%;
+}
+.login-form p:nth-of-type(1)
+{
+    position: absolute;
+    bottom: 15vw;
+
+    width: 100%;
+}
+.login-form p:nth-of-type(2)
+{
+    position: absolute;
+    bottom: 11vw;
+
+    width: 100%;
+}
+.login-form p:nth-of-type(3)
+{
+    position: absolute;
+    bottom: 5vw;
+
+    width: 100%;
+}
+.login-form input[type=text],
+.login-form input[type=password]
+{
+    font-size: 1vw;
+
+    display: block;
+
+    width: 20vw;
+    margin: 0 auto;
+    padding: 10px;
+    padding-left: 20px;
+
+    border: none;
+    border-radius: 20px;
+}
+.login-form input[type=submit]
+{
+    font-size: 1.1vw;
+
+    display: block;
+
+    width: 20vw;
+    height: 3vw;
+    margin: 0 auto;
+
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+
+    color: #fff;
+    border: .2vw solid white;
+    border-radius: 50vw;
+    background: none;
+}
+.login-form .close
+{
+    position: absolute;
+    top: -1vw;
+    right: -1vw;
+}
+.login-form .close img
+{
+    width: 2vw;
+
+    cursor: pointer;
+}
+.login-background
+{
+    position: fixed;
+    z-index: 499;
+    top: -100%;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(127, 127, 127, .5);
+}
 section
 {
     height: 100vh;
 }
-
 .pag1 .contenido
 {
     height: 100vh;
 }
-
 .pag1 .contenido h1
 {
     font-size: 4.5vw;
@@ -157,7 +245,6 @@ section
     padding-top: 200px;
     padding-left: 30px;
 }
-
 .pag1 .contenido span
 {
     font-size: 1.1vw;
@@ -169,7 +256,6 @@ section
     padding-top: 50px;
     padding-left: 30px;
 }
-
 .pag1 .contenido a
 {
     font-size: 1.1vw;
@@ -190,33 +276,27 @@ section
     border: .2vw solid white;
     border-radius: 50vw;
 }
-
 .pag1 .contenido a img
 {
     text-align: center;
 }
-
 .pag2 .contenido
 {
     height: 100vh;
 }
-
 .pag2 .contenido .parte1
 {
     height: 50vh;
 }
-
 .pag2 .contenido .parte2
 {
     height: 50vh;
 }
-
 .pag2 .contenido .parte1 .texto
 {
     width: 40%;
     height: 100%;
 }
-
 .pag2 .contenido .parte2 .texto
 {
     width: 40%;
@@ -225,7 +305,6 @@ section
 
     text-align: right;
 }
-
 .pag2 .contenido .parte1 .texto h1
 {
     font-size: 3vw;
@@ -235,7 +314,6 @@ section
     padding-top: 8vw;
     padding-left: 30px;
 }
-
 .pag2 .contenido .parte1 .texto span
 {
     font-size: 1.1vw;
@@ -245,7 +323,6 @@ section
     padding-top: 50px;
     padding-left: 30px;
 }
-
 .pag2 .contenido .parte1 .mobile img
 {
     position: absolute;
@@ -255,7 +332,6 @@ section
     height: 20vw;
     min-height: 25%;
 }
-
 .pag2 .contenido .parte2 .texto h1
 {
     font-size: 3vw;
@@ -265,7 +341,6 @@ section
     padding-top: 8vw;
     padding-right: 30px;
 }
-
 .pag2 .contenido .parte2 .texto span
 {
     font-size: 1.1vw;
@@ -275,7 +350,6 @@ section
     padding-top: 50px;
     padding-right: 30px;
 }
-
 .pag2 .contenido .parte2 .mobile img
 {
     position: absolute;
@@ -285,7 +359,6 @@ section
     height: 20vw;
     min-height: 25%;
 }
-
 .down
 {
     position: absolute;
@@ -295,7 +368,6 @@ section
 
     text-align: center;
 }
-
 .down img
 {
     width: 9vw;
@@ -303,29 +375,12 @@ section
 
     cursor: pointer;
 }
-
 footer
 {
     height: 50vh;
 
     background-color: #82807f;
 }
-
-footer .network
-{
-    position: absolute;
-    right: 30px;
-}
-
-footer .network img
-{
-    position: relative;
-    top: 30px;
-
-    width: 2vw;
-    margin: 0 1vw;
-}
-
 .registrarse-footer
 {
     position: absolute;
@@ -335,7 +390,6 @@ footer .network img
 
     text-align: center;
 }
-
 .registrarse-footer a
 {
     font-size: 1.1vw;
@@ -355,7 +409,6 @@ footer .network img
     border: .2vw solid white;
     border-radius: 50vw;
 }
-
 footer span:nth-of-type(1)
 {
     font-family: 'sport_centerregular';
@@ -370,7 +423,6 @@ footer span:nth-of-type(1)
 
     text-align: center;
 }
-
 footer span:nth-of-type(2)
 {
     font-size: 1.1vw;
@@ -384,7 +436,6 @@ footer span:nth-of-type(2)
 
     text-align: center;
 }
-
 footer span:nth-of-type(3)
 {
     font-size: 1.1vw;
@@ -398,7 +449,6 @@ footer span:nth-of-type(3)
 
     text-align: center;
 }
-
 footer span:nth-of-type(4)
 {
     font-size: 1.1vw;
@@ -412,7 +462,6 @@ footer span:nth-of-type(4)
 
     text-align: center;
 }
-
 @media screen and (min-width: 2000px)
 {
     .registrarse
@@ -433,7 +482,6 @@ footer span:nth-of-type(4)
         left: 5vh;
     }
 }
-
 @media screen and (max-width: 1000px)
 {
     .pag2 .contenido .parte1 .mobile img
@@ -445,7 +493,6 @@ footer span:nth-of-type(4)
         left: 10vh;
     }
 }
-
 @media screen and (max-width: 800px)
 {
     header
@@ -489,6 +536,57 @@ footer span:nth-of-type(4)
     .fondo2-responsive img
     {
         opacity: 1;
+    }
+    .login-form
+    {
+        left: calc(50% - 25vw - 2px);
+
+        width: 50vw;
+        height: 50vw;
+    }
+    .login-form h1
+    {
+        font-size: 5vw;
+
+        bottom: 40vw;
+    }
+    .login-form p:nth-of-type(1)
+    {
+        bottom: 30vw;
+    }
+    .login-form p:nth-of-type(2)
+    {
+        bottom: 22vw;
+    }
+    .login-form p:nth-of-type(3)
+    {
+        bottom: 10vw;
+    }
+    .login-form input[type=text],
+    .login-form input[type=password]
+    {
+        font-size: 2vw;
+
+        width: 35vw;
+        padding: 10px;
+
+        text-align: center;
+    }
+    .login-form input[type=submit]
+    {
+        font-size: 2vw;
+
+        width: 35vw;
+        height: 5vw;
+    }
+    .login-form .close
+    {
+        top: -3vw;
+        right: -3vw;
+    }
+    .login-form .close img
+    {
+        width: 6vw;
     }
     .pag1 .contenido
     {
@@ -603,17 +701,6 @@ footer span:nth-of-type(4)
         height: 7vw;
         margin: 0 auto;
     }
-    footer .network
-    {
-        right: 1vw;
-    }
-    footer .network img
-    {
-        top: 2vw;
-
-        width: 3vw;
-        margin: 0 1vw;
-    }
     footer span:nth-of-type(1)
     {
         font-size: 15vw;
@@ -639,7 +726,6 @@ footer span:nth-of-type(4)
         bottom: -149vh;
     }
 }
-
 @media screen and (max-width: 500px)
 {
     header
@@ -663,6 +749,43 @@ footer span:nth-of-type(4)
     .login img
     {
         width: 40px;
+    }
+    .login-form
+    {
+        left: calc(50% - 40vw - 2px);
+
+        width: 80vw;
+        height: 80vw;
+    }
+    .login-form h1
+    {
+        font-size: 8vw;
+
+        bottom: 60vw;
+    }
+    .login-form p:nth-of-type(1)
+    {
+        bottom: 40vw;
+    }
+    .login-form p:nth-of-type(2)
+    {
+        bottom: 29vw;
+    }
+    .login-form p:nth-of-type(3)
+    {
+        bottom: 15vw;
+    }
+    .login-form input[type=text],
+    .login-form input[type=password]
+    {
+        width: 60vw;
+    }
+    .login-form input[type=submit]
+    {
+        font-size: 3vw;
+
+        width: 60vw;
+        height: 7vw;
     }
     .pag1 .contenido h1
     {
@@ -707,10 +830,6 @@ footer span:nth-of-type(4)
 
         height: 8vw;
     }
-    footer .network
-    {
-        display: none;
-    }
     footer span:nth-of-type(1)
     {
         font-size: 20vw;
@@ -736,7 +855,6 @@ footer span:nth-of-type(4)
         bottom: -149vh;
     }
 }
-
 @media screen and (max-width: 700px) and (orientation:landscape)
 {
     .fondo img
@@ -750,6 +868,35 @@ footer span:nth-of-type(4)
         min-height: 0;
 
         transform: none;
+    }
+    .login-form
+    {
+        height: 45vw;
+    }
+    .login-form h1
+    {
+        bottom: 35vw;
+    }
+    .login-form p:nth-of-type(1)
+    {
+        bottom: 25vw;
+    }
+    .login-form p:nth-of-type(2)
+    {
+        bottom: 17vw;
+    }
+    .login-form p:nth-of-type(3)
+    {
+        bottom: 5vw;
+    }
+    .login-form input[type=text],
+    .login-form input[type=password]
+    {
+        width: 35vw;
+    }
+    .login-form input[type=submit]
+    {
+        height: 5vw;
     }
     .pag1 .contenido
     {

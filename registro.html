@@ -55,9 +55,9 @@
                         </p>
                         <p>
                             <label>Fecha de nacimiento</label>
-                            <input id="dia" type="text" placeholder="DD">
-                            <input id="mes" type="text" placeholder="MM">
-                            <input id="anyo" type="text" placeholder="AAAA">
+                            <input id="dia" type="number" min="1" max="31" placeholder="DD">
+                            <input id="mes" type="number" min="1" max="12" placeholder="MM">
+                            <input id="anyo" type="number" min="1900" max="2017" placeholder="AAAA">
                         </p>
                         <p>
                             <label>Estatura</label>
@@ -72,10 +72,10 @@
                         <div class="corredor">
                             <label>¿Qué tipo de corredor eres?</label>
                             <ul id="tabs">
-                                <li><a href="#" class="tab1">Casual</a></li>
-                                <li><a href="#" class="tab2">Medio fondo</a></li>
-                                <li><a href="#" class="tab3">Fondo</a></li>
-                                <li><a href="#" class="tab4">Trail</a></li>
+                                <li class="tab1">Casual</li>
+                                <li class="tab2">Medio fondo</li>
+                                <li class="tab3">Fondo</li>
+                                <li class="tab4">Trail</li>
                             </ul>
                             <div class="opciones">
                                 <div id="tab1">¿Nuevo en esto?</div>
@@ -121,23 +121,14 @@
                             </div>
                         </div>
                         <div class="registrarse">
-                            <a href="#">¡Registrarse!</a>
+                            <input type="submit" value="¡Registrarse!">
                         </div>
-                    </div>
-                    <div class="parte3">
-                        <label>Tabla orientativa de frecuencia cardiaca</label>
-                        <img src="media/images/tabla.png" alt="">
                     </div>
                 </form>
             </div>
         </section>
     </main>
     <footer>
-        <div class="network">
-            <a href="#"><img src="media/images/instagram.png" alt=""></a>
-            <a href="#"><img src="media/images/facebook.png" alt=""></a>
-            <a href="#"><img src="media/images/twitter.png" alt=""></a>
-        </div>
         <span>ALIMA</span>
         <div class="registrarse-footer">
             <a href="#">¡Empieza ahora gratis!</a>
