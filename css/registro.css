@@ -4,7 +4,6 @@ body
 
     color: #fff;
 }
-
 header
 {
     position: absolute;
@@ -15,7 +14,6 @@ header
     width: 100%;
     height: 60px;
 }
-
 header h1
 {
     font-family: 'sport_centerregular';
@@ -24,7 +22,12 @@ header h1
     position: absolute;
     left: 30px;
 }
+header h1 a
+{
+    text-decoration: none;
 
+    color: #fff;
+}
 .fondo img
 {
     position: fixed;
@@ -39,7 +42,6 @@ header h1
 
     transform: translateX(-50%) translateY(-50%);
 }
-
 .fondo1,
 .fondo1-responsive .fondo2,
 .fondo2-responsive
@@ -50,7 +52,6 @@ header h1
     width: 100%;
     height: 100vh;
 }
-
 .fondo1 img
 {
     position: absolute;
@@ -62,7 +63,6 @@ header h1
 
     opacity: 1;
 }
-
 .fondo1-responsive img
 {
     position: absolute;
@@ -95,17 +95,68 @@ main
 {
     min-height: 100vh;
 }
+.errores
+{
+    position: fixed;
+    z-index: 500;
+    top: -100%;
+    left: calc(50% - 250px - 2px);
 
+    width: 500px;
+    padding: 10px;
+    text-align: center;
+
+    border: 2px solid #fff;
+    background-color: #82807f;
+}
+.errores h1
+{
+    font-size: 20px; 
+    margin-bottom: 5px;
+}
+.errores .error
+{
+    margin: 0 auto;
+    text-align: left;
+    color: #8d0202;
+    border: 1px solid #8d0202;
+    background-color: #ff9395;
+}
+.errores .error p
+{
+    margin: 5px;
+}
+.errores .close
+{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+.errores .close img
+{
+    width: 30px;
+
+    cursor: pointer;
+}
+.errores-background
+{
+    position: fixed;
+    z-index: 499;
+    top: -100%;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(127, 127, 127, .5);
+}
 section
 {
     height: 100vh;
 }
-
 .pag1 .contenido
 {
     height: 100vh;
 }
-
 .pag1 .contenido h1
 {
     font-size: 3.5vw;
@@ -117,7 +168,6 @@ section
 
     text-align: center;
 }
-
 .pag1 .contenido form
 {
     position: relative;
@@ -128,24 +178,20 @@ section
     margin: 0 auto;
     padding-top: 20px;
 }
-
 .pag1 .contenido p
 {
-    margin: 25px 0;
+    margin: 10px 0;
 }
-
 .pag1 .contenido p:nth-of-type(1)
 {
     margin: 0;
 }
-
 .pag1 .contenido .parte1
 {
     position: absolute;
 
     width: 50%;
 }
-
 .pag1 .contenido .parte1 label
 {
     font-size: 15px;
@@ -155,7 +201,6 @@ section
     margin: 5px 0;
     padding-left: 20px;
 }
-
 .pag1 .contenido .parte1 p:nth-of-type(1) input[type=text],
 .pag1 .contenido .parte1 p:nth-of-type(1) input[type=password]
 {
@@ -169,7 +214,17 @@ section
     border: none;
     border-radius: 20px;
 }
-
+.pag1 .contenido .parte1 p:nth-of-type(1) select
+{
+    font-size: 15px;
+    color: #8d0202;
+    width: 40%;
+    margin: 5px 0px;
+    padding: 9px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 20px;
+}
 .pag1 .contenido .parte1 p:nth-of-type(2) input[type=number]
 {
     padding: 10px;
@@ -178,25 +233,21 @@ section
     border: none;
     border-radius: 20px;
 }
-
 .pag1 .contenido .parte1 p:nth-of-type(2) input[type=number]:nth-of-type(1)
 {
     width: 15%;
     margin-top: 5px;
 }
-
 .pag1 .contenido .parte1 p:nth-of-type(2) input[type=number]:nth-of-type(2)
 {
     width: 15;
     margin-top: 5px;
 }
-
 .pag1 .contenido .parte1 p:nth-of-type(2) input[type=number]:nth-of-type(3)
 {
     width: 20%;
     margin-top: 5px;
 }
-
 .pag1 .contenido .parte1 input[type=range]
 {
     width: 60%;
@@ -206,7 +257,6 @@ section
 
     -webkit-appearance: none;
 }
-
 .pag1 .contenido .parte1 span
 {
     font-size: 15px;
@@ -215,7 +265,6 @@ section
     top: 4px;
     left: 10px;
 }
-
 .pag1 .contenido .parte2
 {
     position: absolute;
@@ -238,7 +287,6 @@ section
     margin: 5px 0;
     padding-left: 20px;
 }
-
 #tabs
 {
     display: flex;
@@ -246,7 +294,6 @@ section
 
     list-style: none;
 }
-
 #tabs li
 {
     margin-top: 5px;
@@ -260,17 +307,14 @@ section
 
     flex: 1 1 auto;
 }
-
 #tabs li:first-child
 {
     border-radius: 20px 0 0 0;
 }
-
 #tabs li:last-child
 {
     border-radius: 0 20px 0 0;
 }
-
 #tabs #current
 {
     z-index: 3;
@@ -314,14 +358,18 @@ section
     margin: 5px 0;
     padding-left: 20px;
 }
+.pag1 .contenido .parte2 .cardio a
+{
+    color: #fff;
 
+}
 .zonas
 {
     position: relative;
     z-index: 2;
 
     margin-top: 10px;
-    padding: 15px 10px;
+    padding: 5px;
 
     text-align: center;
 
@@ -329,13 +377,21 @@ section
     border-radius: 20px;
     background: #fff;
 }
-
 .zonas label
 {
     display: block;
 
     margin: 5px 0;
     padding-left: 0;
+}
+.zonas span
+{
+	font-size: 10px;
+}
+.zonas input
+{
+    width: 30%;
+    display: inline-block;
 }
 .registrarse
 {
@@ -344,7 +400,6 @@ section
 
     text-align: center;
 }
-
 .registrarse input
 {
     font-size: 1.1vw;
@@ -485,6 +540,12 @@ footer span:nth-of-type(4)
 
         opacity: 1;
     }
+    .errores
+    {
+        left: calc(50% - 210px - 2px);
+
+        width: 400px;
+    }
     section
     {
         height: 200vh;
@@ -598,10 +659,12 @@ footer span:nth-of-type(4)
     .pag1 .contenido .parte2 .corredor
     {
         width: 100%;
+        min-width: auto;
     }
     .pag1 .contenido .parte2 .cardio
     {
         width: 100%;
+        min-width: auto;
     }
     .registrarse-footer
     {
@@ -661,6 +724,12 @@ footer span:nth-of-type(4)
 
         top: 0;
     }
+    .errores
+    {
+        left: calc(50% - 160px - 2px);
+
+        width: 300px;
+    }
     .registrarse-footer a
     {
         font-size: 5vw;
@@ -692,55 +761,5 @@ footer span:nth-of-type(4)
         font-size: 4vw;
 
         bottom: -149vh;
-    }
-}
-
-@media screen and (max-width: 700px) and (orientation:landscape)
-{
-    .fondo img
-    {
-        top: 0;
-        left: 0;
-
-        width: 100%;
-        min-width: 0;
-        height: 100vh;
-        min-height: 0;
-
-        transform: none;
-    }
-    main
-    {
-        min-height: 0;
-    }
-    section
-    {
-        height: 0;
-    }
-    .fondo1
-    {
-        display: none;
-    }
-    .fondo2-responsive
-    {
-        display: none;
-    }
-    .pag1 .contenido
-    {
-        display: none;
-    }
-    .horizontal
-    {
-        font-size: 5vw;
-
-        display: block;
-
-        margin-top: 25%;
-
-        text-align: center;
-    }
-    footer
-    {
-        display: none;
     }
 }

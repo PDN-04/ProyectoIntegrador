@@ -1,0 +1,596 @@
+body
+{
+    font-family: 'Microsoft Sans Serif';
+
+    color: #fff;
+}
+header
+{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 60px;
+}
+header h1
+{
+    font-family: 'sport_centerregular';
+    font-size: 60px;
+
+    position: absolute;
+    left: 30px;
+}
+header h1 a
+{
+    text-decoration: none;
+
+    color: #fff;
+}
+.perfil
+{
+    position: absolute;
+    top: 10px;
+    right: 80px;
+
+    padding: 10px 20px;
+
+    text-decoration: none;
+
+    color: #8d0202;
+    text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff;
+}
+.perfil img
+{
+    height: 30px;
+}
+.logoff
+{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+
+    padding: 10px 20px;
+
+    text-decoration: none;
+
+    color: #8d0202;
+    text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff;
+}
+.logoff img
+{
+    height: 30px;
+}
+.fondo img
+{
+    position: fixed;
+    z-index: -100;
+    top: 50%;
+    left: 50%;
+
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+
+    transform: translateX(-50%) translateY(-50%);
+}
+.fondo1,
+.fondo1-responsive .fondo2,
+.fondo2-responsive
+{
+    position: absolute;
+    z-index: -99;
+
+    width: 100%;
+    height: 100vh;
+}
+.fondo1 img
+{
+    position: absolute;
+    z-index: -99;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 1;
+}
+.fondo1-responsive img
+{
+    position: absolute;
+    z-index: -99;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+}
+.fondo2-responsive img
+{
+    position: absolute;
+    z-index: -99;
+    top: 100vh;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+}
+.horizontal
+{
+    display: none;
+}
+main
+{
+    min-height: 100vh;
+}
+section
+{
+    height: 100vh;
+}
+.pag1 .contenido
+{
+    height: calc(100vh - 100px);
+    padding-top: 100px;
+}
+.pag1 .contenido .parte1
+{
+    position: absolute;
+
+    width: 30%;
+    margin-top: 20px;
+}
+.acordeon
+{
+    position: absolute;
+    left: 10%;
+
+    width: 90%;
+    margin: 0 auto;
+
+    border: 1px solid #424242;
+}
+.elemento > a,
+.elemento ul
+{
+    display: block;
+
+    padding: 10px;
+
+    text-decoration: none;
+}
+.elemento > a
+{
+    cursor: pointer;
+
+    color: #000;
+    border-bottom: 1px solid #424242;
+    background: #fff;
+}
+.elemento ul
+{
+    border-bottom: 1px solid #424242;
+}
+.acordeon:last-child
+{
+    border-bottom: none;
+}
+.elemento ul
+{
+    padding: 0;
+
+    color: #fff;
+    background: #aaa;
+}
+.elemento ul li a
+{
+    display: block;
+
+    padding: 10px;
+    padding-left: 40px;
+
+    text-decoration: none;
+
+    color: #fff;
+}
+.elemento ul li a:hover
+{
+    background: #555;
+}
+.pag1 .contenido .parte2
+{
+    position: absolute;
+    left: 30%;
+
+    width: 70%;
+    margin-top: 20px;
+}
+.track
+{
+    position: relative;
+
+    width: 90%;
+    margin: 0 auto;
+}
+.track .titulo
+{
+    padding: 15px;
+
+    text-align: right;
+
+    color: #000;
+    background-color: #fff;
+}
+.track .datos
+{
+    display: flex;
+    flex-direction: row;
+
+    height: 300px;
+    margin-top: 10px;
+    padding: 15px;
+
+    color: #000;
+    background-color: #fff;
+}
+.track .datos .informacion
+{
+    margin-right: 5px;
+
+    flex: 1 1 auto;
+}
+.track .datos .informacion ul
+{
+    height: 275px;
+
+    border: 1px solid #82807f;
+}
+.track .datos .informacion li
+{
+    padding: 5px;
+}
+.track .datos .informacion li span:last-child
+{
+    font-size: 15px;
+    margin-left: 20px;
+    line-height: 30px;
+}
+.track .datos .informacion .opciones
+{
+    width: 100%;
+    height: 25px;
+
+    text-align: center;
+}
+.track .datos .informacion .opciones a
+{
+    line-height: 25px;
+
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+}
+.track .datos .informacion .opciones img
+{
+    height: 20px;
+    vertical-align: middle;
+    margin: 0 5px;
+
+}
+.track .datos .mapa
+{
+    margin-left: 5px;
+
+    border: 1px solid #82807f;
+
+    flex: 3 3 auto;
+}
+footer
+{
+    height: 50vh;
+
+    background-color: #82807f;
+}
+.registrarse-footer
+{
+    position: absolute;
+    bottom: -30vh;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+.registrarse-footer a
+{
+    font-size: 1.1vw;
+    line-height: 3vw;
+
+    display: block;
+
+    min-width: 10vh;
+    max-width: 20%;
+    height: 3vw;
+    margin: 0 auto;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #fff;
+    border: .2vw solid white;
+    border-radius: 50vw;
+}
+
+footer span:nth-of-type(1)
+{
+    font-family: 'sport_centerregular';
+    font-size: 5vw;
+
+    position: absolute;
+    bottom: -10vh;
+
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+footer span:nth-of-type(2)
+{
+    font-size: 1.1vw;
+
+    position: absolute;
+    bottom: -20vh;
+
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+footer span:nth-of-type(3)
+{
+    font-size: 1.1vw;
+
+    position: absolute;
+    bottom: -45vh;
+
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+footer span:nth-of-type(4)
+{
+    font-size: 1.1vw;
+
+    position: absolute;
+    bottom: -49vh;
+
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+@media screen and (max-width: 800px)
+{
+    header
+    {
+        position: absolute;
+    }
+    header h1
+    {
+        font-size: 80px;
+
+        top: -6px;
+    }
+    .fondo1 img
+    {
+        opacity: 0;
+    }
+    .fondo1-responsive img
+    {
+        opacity: 1;
+    }
+    .fondo2-responsive img
+    {
+        display: block;
+
+        opacity: 1;
+    }
+    .perfil
+    {
+        top: 8px;
+
+        padding: 0;
+        right: 100px;
+        border: none;
+    }
+    .perfil img
+    {
+        width: 50px;
+        height: 50px;
+    }
+    .logoff
+    {
+        top: 8px;
+
+        padding: 0;
+
+        border: none;
+    }
+    .logoff img
+    {
+        width: 50px;
+        height: 50px;
+    }
+    section
+    {
+        height: 200vh;
+    }
+    .pag1 .contenido
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .pag1 .contenido h1
+    {
+        font-size: 8vw;
+
+        max-width: 80%;
+        margin: 0 auto;
+        padding-top: 150px;
+        padding-left: 0;
+    }
+    .pag1 .contenido form
+    {
+        width: 80%;
+        max-width: none;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    .pag1 .contenido .parte1
+    {
+        position: static;
+
+        width: 100%;
+    }
+    .pag1 .contenido .parte1 .acordeon
+    {
+        position: static;
+
+    }
+    .pag1 .contenido .parte2
+    {
+        position: static;
+
+        width: 100%;
+    }
+    .registrarse-footer
+    {
+        bottom: -130vh;
+    }
+    .registrarse-footer a
+    {
+        font-size: 3vw;
+        line-height: 7vw;
+
+        display: block;
+
+        min-width: 10vh;
+        max-width: 80%;
+        height: 7vw;
+        margin: 0 auto;
+    }
+    footer span:nth-of-type(1)
+    {
+        font-size: 15vw;
+
+        bottom: -115vh;
+    }
+    footer span:nth-of-type(2)
+    {
+        font-size: 3vw;
+
+        bottom: -120vh;
+    }
+    footer span:nth-of-type(3)
+    {
+        font-size: 3vw;
+
+        bottom: -144vh;
+    }
+    footer span:nth-of-type(4)
+    {
+        font-size: 3vw;
+
+        bottom: -149vh;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    body
+    {
+        font-size: 10px;
+    }
+    header
+    {
+        position: absolute;
+    }
+    header h1
+    {
+        font-size: 60px;
+
+        top: 0;
+    }
+    .perfil
+    {
+        top: 8px;
+
+        padding: 0;
+        right: 80px;
+        border: none;
+    }
+    .perfil img
+    {
+        width: 40px;
+        height: 40px;
+    }
+    .logoff
+    {
+        top: 8px;
+
+        padding: 0;
+
+        border: none;
+    }
+    .logoff img
+    {
+        width: 40px;
+        height: 40px;
+    }
+    .registrarse-footer a
+    {
+        font-size: 5vw;
+        line-height: 8vw;
+
+        height: 8vw;
+    }
+
+    footer span:nth-of-type(1)
+    {
+        font-size: 20vw;
+
+        bottom: -115vh;
+    }
+    footer span:nth-of-type(2)
+    {
+        font-size: 5vw;
+
+        bottom: -120vh;
+    }
+    footer span:nth-of-type(3)
+    {
+        font-size: 4vw;
+
+        bottom: -144vh;
+    }
+    footer span:nth-of-type(4)
+    {
+        font-size: 4vw;
+
+        bottom: -149vh;
+    }
+}

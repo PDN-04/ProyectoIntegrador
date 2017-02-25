@@ -1,0 +1,48 @@
+@font-face
+{
+    font-family: 'icon';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/icon.eot?xrgnbc');
+    src: url('../fonts/icon.eot?xrgnbc#iefix') format('embedded-opentype'),
+    url('../fonts/icon.woff?xrgnbc') format('woff'),
+    url('../fonts/icon.svg?xrgnbc#icon') format('svg');
+}
+
+[class^='icon-'],
+[class*=' icon-']
+{
+    font-family: 'icon' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bike:before
+{
+    content: '\e900';
+}
+.icon-compass:before
+{
+    content: '\e94a';
+}
+.icon-alarm:before
+{
+    content: '\e950';
+}
+.icon-speed:before
+{
+    content: '\e9a7';
+}
+.icon-heart:before
+{
+    content: '\e9da';
+}

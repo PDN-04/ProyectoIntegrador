@@ -25,7 +25,7 @@
 {
     animation: latidos 1s infinite;
 }
-.pag1 .contenido a:hover,
+.pag1 .contenido > a:hover,
 .registrarse-footer:hover a,
 .login-form input[type=submit]:hover,
 .registrarse input:hover
