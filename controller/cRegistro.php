@@ -5,7 +5,6 @@ if (!strpos(dirname($_SERVER['PHP_SELF']), 'controller')) {
 else {
     require_once '../model/Usuario.php';
 }
-
 if (isset($_GET['registro'])) {
     $usuario = $_POST['usuario'];
     $password = $_POST['password'];

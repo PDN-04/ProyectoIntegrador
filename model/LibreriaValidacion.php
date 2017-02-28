@@ -1,4 +1,5 @@
 <?php
+require_once "UsuarioPDO.php";
 
 class LibreriaValidacion {
 
@@ -28,11 +29,20 @@ class LibreriaValidacion {
 			}
 			else {
 				if (strlen($valor) < 8) {
-					$error = "El nombre de usuario es demasiado corto.|";
+					$error = "El nombre de usuario es demasiado corto (8-15 caracteres).|";
 				}
-				if (strlen($valor) > 15) {
-					$error = "El nombre de usuario es demasiado largo.|";
+				else {
+					if (strlen($valor) > 15) {
+						$error = "El nombre de usuario es demasiado largo (8-15 caracteres).|";
+					}
+					else {
+						$usuario = UsuarioPDO::buscarUsuario($valor);
+						if (!empty($usuario)) {
+						    $error = "El nombre de usuario ya existe.|";
+						}
+					}
 				}
+				
 			}
 		}
 		return $error;
@@ -50,10 +60,10 @@ class LibreriaValidacion {
 			}
 			else {
 				if (strlen($valor) < 8) {
-					$error = "La contraseña es demasiado corta.|";
+					$error = "La contraseña es demasiado corta (8-15 caracteres).|";
 				}
 				if (strlen($valor) > 15) {
-					$error = "La contraseña es demasiado larga.|";
+					$error = "La contraseña es demasiado larga (8-15 caracteres).|";
 				}
 			}
 		}
@@ -76,6 +86,12 @@ class LibreriaValidacion {
 		else {
 			if(!filter_var($valor, FILTER_VALIDATE_EMAIL)) {
 				$error = "El E-mail introducido no es válido.|";
+			}
+			else {
+				$usuario = UsuarioPDO::buscarEmail($valor);
+				if (!empty($usuario)) {
+				    $error = "El E-mail ya ya está en uso.|";
+				}
 			}
 		}
 		return $error;

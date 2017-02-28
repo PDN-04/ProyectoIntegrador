@@ -29,5 +29,41 @@ class UsuarioPDO {
         }
         return $correcto;
     }
+    public static function buscarUsuario($codigo) {
+        $sentenciaSQL = "select * from Usuario where codigo=?";
+        $parametros = [$codigo];
+        $arrayUser = [];
+        $resultSet = DBPDO::ejecutaConsulta($sentenciaSQL, $parametros);
+        $usuario = $resultSet -> fetchObject();
+        if ($resultSet -> rowCount()) {
+            $arrayUser['codigo'] = $usuario -> codigo;
+            $arrayUser['password'] = $usuario -> password;
+            $arrayUser['email'] = $usuario -> email;
+            $arrayUser['nombre'] = $usuario -> nombre;
+            $arrayUser['sexo'] = $usuario -> sexo;
+            $arrayUser['fechaNac'] = $usuario -> fechaNac;
+            $arrayUser['estatura'] = $usuario -> estatura;
+            $arrayUser['peso'] = $usuario -> peso;
+        }
+        return $arrayUser;
+    }
+    public static function buscarEmail($email) {
+        $sentenciaSQL = "select * from Usuario where email=?";
+        $parametros = [$email];
+        $arrayUser = [];
+        $resultSet = DBPDO::ejecutaConsulta($sentenciaSQL, $parametros);
+        $usuario = $resultSet -> fetchObject();
+        if ($resultSet -> rowCount()) {
+            $arrayUser['codigo'] = $usuario -> codigo;
+            $arrayUser['password'] = $usuario -> password;
+            $arrayUser['email'] = $usuario -> email;
+            $arrayUser['nombre'] = $usuario -> nombre;
+            $arrayUser['sexo'] = $usuario -> sexo;
+            $arrayUser['fechaNac'] = $usuario -> fechaNac;
+            $arrayUser['estatura'] = $usuario -> estatura;
+            $arrayUser['peso'] = $usuario -> peso;
+        }
+        return $arrayUser;
+    }
 }
 ?>

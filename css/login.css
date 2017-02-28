@@ -145,6 +145,12 @@ main
     border: 2px solid #fff;
     background-color: #82807f;
 }
+.login-form h1
+{
+    font-size: 50px;
+
+    bottom: 200px;
+}
 .login-form .error
 {
     position: absolute;

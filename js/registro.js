@@ -9,10 +9,7 @@ $(document).ready(function() {
             })
             .done(function(respuesta) {
                 if (respuesta == "||||||") {
-                    $( ".errores h1").remove();
-                    $( ".error").remove();
-                    $('.errores').append("<h1>Usuario dado de alta correctamente</h1>");
-                    $('.errores').append("<a href='index.php?location=postRegistro&aceptar=true'>Aceptar</a>");
+                    window.location.href = "index.php?location=postRegistro&aceptar=true";
                 }
                 else {
                     var errores = [];
