@@ -36,12 +36,53 @@ class Usuario {
         $errores = $errores . LibreriaValidacion::comprobarPassword($password);
         $errores = $errores . LibreriaValidacion::compararPasswords($password, $password2);
         $errores = $errores . LibreriaValidacion::comprobarEmail($email);
+        $errores = $errores . LibreriaValidacion::existeEmail($email);
         $errores = $errores . LibreriaValidacion::comprobarNombre($nombre);
         $errores = $errores . LibreriaValidacion::comprobarFechaNacimiento($fechaNac);
-        if ($errores == "||||||") {
+        if ($errores == "|||||||") {
             $usuario = UsuarioPDO::crearUsuario($codigo, hash('sha256', $password), $email, $nombre, $sexo, $fechaNac, $estatura, $peso);
         }
         return $errores;
+    }
+    public static function modificarUsuario($codigo, $password, $password2, $email, $nombre, $sexo, $fechaNac, $estatura, $peso) {
+        $errores = "";
+        $errores = $errores . LibreriaValidacion::comprobarPassword($password);
+        $errores = $errores . LibreriaValidacion::compararPasswords($password, $password2);
+        $errores = $errores . LibreriaValidacion::comprobarEmail($email);
+        $errores = $errores . LibreriaValidacion::existeEmailModificar($email, $codigo);
+        $errores = $errores . LibreriaValidacion::comprobarNombre($nombre);
+        $errores = $errores . LibreriaValidacion::comprobarFechaNacimiento($fechaNac);
+        if ($errores == "||||||") {
+            UsuarioPDO::modificarUsuario($codigo, hash('sha256', $password), $email, $nombre, $sexo, $fechaNac, $estatura, $peso);
+        }
+        return $errores;
+    }
+    public function getCodigo() {
+        return $this->codigo;
+    }
+    public function getPassword() {
+        return $this->password;
+    }
+    public function getPassword2() {
+        return $this->password2;
+    }
+    public function getEmail() {
+        return $this->email;
+    }
+    public function getNombre() {
+        return $this->nombre;
+    }
+    public function getSexo() {
+        return $this->sexo;
+    }
+    public function getFechaNac() {
+        return $this->fechaNac;
+    }
+    public function getEstatura() {
+        return $this->estatura;
+    }
+    public function getPeso() {
+        return $this->peso;
     }
 }
 ?>

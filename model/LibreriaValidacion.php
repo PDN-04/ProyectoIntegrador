@@ -81,22 +81,35 @@ class LibreriaValidacion {
 	public static function comprobarEmail($valor) {
 		$error = "|";
 		if (empty(trim($valor))) {
-			$error = "Debe insertar un e-mail.|"; 
+			$error = "Debe insertar un E-mail.|"; 
 		}
 		else {
 			if(!filter_var($valor, FILTER_VALIDATE_EMAIL)) {
 				$error = "El E-mail introducido no es válido.|";
 			}
-			else {
-				$usuario = UsuarioPDO::buscarEmail($valor);
-				if (!empty($usuario)) {
-				    $error = "El E-mail ya ya está en uso.|";
-				}
+			
+		}
+		return $error;
+	}
+	public static function existeEmail($valor) {
+		$error = "|";
+		$usuario = UsuarioPDO::buscarEmail($valor);
+		if (!empty($usuario)) {
+		    $error = "El E-mail ya está en uso.|";
+		}
+		return $error;
+	}
+	public static function existeEmailModificar($valor, $codigo) {
+		$error = "|";
+		$usuario = UsuarioPDO::buscarEmail($valor);
+		if (!empty($usuario)) {
+			$codigoUsuario = $usuario['codigo'];
+			if ($codigo != $codigoUsuario) {
+				$error = "El E-mail ya está en uso.|";
 			}
 		}
 		return $error;
 	}
-
 	public static function comprobarFechaNacimiento($fecha) {
 		$error = "|";
 		$patron = "/\d{1,2}\-\d{1,2}\-\d{4}/";

@@ -138,7 +138,6 @@ main
     left: calc(50% - 250px - 2px);
 
     width: 500px;
-    height: 300px;
 
     text-align: center;
 
@@ -147,49 +146,30 @@ main
 }
 .login-form h1
 {
-    font-size: 50px;
+    font-size: 40px;
 
     bottom: 200px;
 }
 .login-form .error
 {
-    position: absolute;
-    bottom: 185px;
-
-    width: 100%;
-
     opacity: 0;
+    display: none;
+    margin: 15px 0;
 }
 .login-form .error span
 {
     font-weight: bold;
 
     padding: 10px;
+    margin: 10px;
 
     color: #8d0202;
     border: 1px solid #8d0202;
     background-color: #ff9395;
 }
-.login-form p:nth-of-type(1)
+.login-form p
 {
-    position: absolute;
-    bottom: 125px;
-
-    width: 100%;
-}
-.login-form p:nth-of-type(2)
-{
-    position: absolute;
-    bottom: 75px;
-
-    width: 100%;
-}
-.login-form p:nth-of-type(3)
-{
-    position: absolute;
-    bottom: 10px;
-
-    width: 100%;
+    margin: 5px 0;
 }
 .login-form input[type=text],
 .login-form input[type=password]
@@ -222,8 +202,8 @@ main
 
     color: #fff;
     border: 2px solid white;
-    background: none;
     border-radius: 20px;
+    background: none;
 }
 .login-form .close
 {
@@ -561,37 +541,9 @@ footer span:nth-of-type(4)
     }
     .login-form
     {
-        left: calc(50% - 200px - 2px);
+        left: calc(50% - 160px - 2px);
 
-        width: 400px;
-        height: 250px;
-    }
-    .login-form h1
-    {
-        font-size: 35px;
-
-        bottom: 200px;
-    }
-    .login-form .error
-    {
-        bottom: 165px;
-    }
-    .login-form p:nth-of-type(1)
-    {
-        bottom: 110px;
-    }
-    .login-form p:nth-of-type(2)
-    {
-        bottom: 60px;
-    }
-    .login-form p:nth-of-type(3)
-    {
-        bottom: 10px;
-    }
-    .login-form input[type=text],
-    .login-form input[type=password]
-    {
-        text-align: center;
+        width: 300px;
     }
     .pag1 .contenido
     {
@@ -754,17 +706,6 @@ footer span:nth-of-type(4)
     .login img
     {
         width: 40px;
-    }
-    .login-form
-    {
-        left: calc(50% - 150px - 2px);
-
-        width: 300px;
-    }
-    .login-form input[type=text],
-    .login-form input[type=password]
-    {
-        text-align: center;
     }
     .pag1 .contenido h1
     {

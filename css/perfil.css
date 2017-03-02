@@ -1,0 +1,720 @@
+body
+{
+    font-family: 'Microsoft Sans Serif';
+
+    color: #fff;
+}
+header
+{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 60px;
+}
+header h1
+{
+    font-family: 'sport_centerregular';
+    font-size: 60px;
+
+    position: absolute;
+    left: 30px;
+}
+header h1 a
+{
+    text-decoration: none;
+
+    color: #fff;
+}
+.fondo img
+{
+    position: fixed;
+    z-index: -100;
+    top: 50%;
+    left: 50%;
+
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+
+    transform: translateX(-50%) translateY(-50%);
+}
+.fondo1,
+.fondo1-responsive .fondo2,
+.fondo2-responsive
+{
+    position: absolute;
+    z-index: -99;
+
+    width: 100%;
+    height: 100vh;
+}
+.fondo1 img
+{
+    position: absolute;
+    z-index: -99;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 1;
+}
+.fondo1-responsive img
+{
+    position: absolute;
+    z-index: -99;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+}
+.fondo2-responsive img
+{
+    position: absolute;
+    z-index: -99;
+    top: 100vh;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+}
+.horizontal
+{
+    display: none;
+}
+main
+{
+    min-height: 100vh;
+}
+.errores, .correcto, .confirmacion-form
+{
+    position: fixed;
+    z-index: 500;
+    top: -100%;
+    left: calc(50% - 250px - 2px);
+
+    width: 500px;
+    padding: 10px;
+    text-align: center;
+
+    border: 2px solid #fff;
+    background-color: #82807f;
+}
+.errores h1
+{
+    font-size: 20px; 
+    margin-bottom: 5px;
+}
+.correcto h1
+{
+    font-size: 20px; 
+}
+.errores .error
+{
+    margin: 0 auto;
+    text-align: left;
+    color: #8d0202;
+    border: 1px solid #8d0202;
+    background-color: #ff9395;
+}
+.errores .error p, .confirmacion-form p
+{
+    margin: 5px;
+}
+.confirmacion-form input[type=text],
+.confirmacion-form input[type=password]
+{
+    font-size: 15px;
+
+    display: block;
+
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    padding-left: 20px;
+
+    border: none;
+    border-radius: none;
+}
+.confirmacion-form input[type=submit]
+{
+    font-size: 15px;
+
+    display: block;
+
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+
+    color: #fff;
+    border: 2px solid white;
+    background: none;
+    border-radius: 20px;
+}
+.errores .close, .correcto .close, .confirmacion-form .close
+{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+.errores .close img, .correcto .close img, .confirmacion-form .close img
+{
+    width: 30px;
+
+    cursor: pointer;
+}
+.errores-background, .correcto-background, .confirmacion-background
+{
+    position: fixed;
+    z-index: 499;
+    top: -100%;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(127, 127, 127, .5);
+}
+.boton
+{
+    width: 100%;
+    margin-top: 10px;
+}
+.boton input
+{
+    font-size: 1.1vw;
+
+    display: block;
+
+    width: 50%;
+    min-width: 300px;
+    height: 3vw;
+    min-height: 40px;
+
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+
+    color: #fff;
+    border: .2vw solid white;
+    border-radius: 50vw;
+    background: none;
+}
+section
+{
+    height: 100vh;
+}
+.pag1 .contenido
+{
+    height: 100vh;
+}
+.pag1 .contenido h1
+{
+    font-size: 3.5vw;
+
+    display: block;
+
+    width: 100%;
+    padding-top: 100px;
+
+    text-align: center;
+}
+.pag1 .contenido form
+{
+    position: relative;
+
+    display: block;
+
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.pag1 .contenido p
+{
+    margin: 10px 0;
+}
+.pag1 .contenido p
+{
+    margin: 0;
+}
+.pag1 .contenido .parte1
+{
+    position: absolute;
+
+    width: 50%;
+}
+.pag1 .contenido label
+{
+    font-size: 15px;
+
+    display: block;
+
+    margin: 5px 0;
+    padding-left: 20px;
+}
+.pag1 .contenido form p input[type=text],
+.pag1 .contenido form p input[type=password]
+{
+    font-size: 15px;
+
+    width: 70%;
+    margin: 5px 0;
+    padding: 10px;
+    padding-left: 20px;
+
+    border: none;
+    border-radius: 20px;
+}
+.pag1 .contenido p input[type=number]
+{
+    padding: 10px;
+    padding-left: 15px;
+margin: 5px 0;
+    border: none;
+    border-radius: 20px;
+}
+.pag1 .contenido p input[type=number]:nth-of-type(1)
+{
+    width: 15%;
+    margin-top: 5px;
+}
+.pag1 .contenido p input[type=number]:nth-of-type(2)
+{
+    width: 15;
+    margin-top: 5px;
+}
+.pag1 .contenido p input[type=number]:nth-of-type(3)
+{
+    width: 20%;
+    margin-top: 5px;
+}
+.pag1 .contenido p input[type=range]
+{
+    width: 60%;
+    margin: 10.2px 0;
+
+    background: none;
+
+    -webkit-appearance: none;
+}
+.pag1 .contenido .parte2 span
+{
+    font-size: 15px;
+
+    position: relative;
+    top: 4px;
+    left: 10px;
+}
+.pag1 .contenido .parte2
+{
+    position: absolute;
+    left: 50%;
+
+    width: 50%;
+}
+.pag1 .contenido .parte2 .corredor
+{
+    width: 50%;
+    min-width: 320px;
+    margin: 0 auto;
+}
+.pag1 .contenido .parte2 .corredor > label
+{
+    font-size: 15px;
+
+    display: block;
+
+    margin: 5px 0;
+    padding-left: 20px;
+}
+.boton
+{
+    width: 100%;
+    margin-top: 10px;
+}
+.boton input
+{
+    font-size: 1.1vw;
+
+    display: block;
+
+    width: 50%;
+    min-width: 300px;
+    height: 3vw;
+    min-height: 40px;
+
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+
+    color: #fff;
+    border: .2vw solid white;
+    border-radius: 50vw;
+    background: none;
+}
+footer
+{
+    height: 50vh;
+
+    background-color: #82807f;
+}
+.registrarse-footer
+{
+    position: absolute;
+    bottom: -30vh;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+.registrarse-footer a
+{
+    font-size: 1.1vw;
+    line-height: 3vw;
+
+    display: block;
+
+    min-width: 10vh;
+    max-width: 20%;
+    height: 3vw;
+    margin: 0 auto;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #fff;
+    border: .2vw solid white;
+    border-radius: 50vw;
+}
+
+footer span:nth-of-type(1)
+{
+    font-family: 'sport_centerregular';
+    font-size: 5vw;
+
+    position: absolute;
+    bottom: -10vh;
+
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+footer span:nth-of-type(2)
+{
+    font-size: 1.1vw;
+
+    position: absolute;
+    bottom: -20vh;
+
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+footer span:nth-of-type(3)
+{
+    font-size: 1.1vw;
+
+    position: absolute;
+    bottom: -45vh;
+
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+footer span:nth-of-type(4)
+{
+    font-size: 1.1vw;
+
+    position: absolute;
+    bottom: -49vh;
+
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+@media screen and (max-width: 800px)
+{
+    header
+    {
+        position: absolute;
+    }
+    header h1
+    {
+        font-size: 80px;
+
+        top: -6px;
+    }
+    .fondo1 img
+    {
+        opacity: 0;
+    }
+    .fondo1-responsive img
+    {
+        opacity: 1;
+    }
+    .fondo2-responsive img
+    {
+        display: block;
+
+        opacity: 1;
+    }
+    .errores
+    {
+        left: calc(50% - 160px - 2px);
+
+        width: 300px;
+    }
+    .correcto
+    {
+        left: calc(50% - 160px - 2px);
+
+        width: 300px;
+    }
+    .confirmacion-form
+    {
+        left: calc(50% - 160px - 2px);
+
+        width: 300px;
+    }
+    section
+    {
+        height: 200vh;
+    }
+    .pag1 .contenido
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .pag1 .contenido h1
+    {
+        font-size: 8vw;
+
+        max-width: 80%;
+        margin: 0 auto;
+        padding-top: 150px;
+        padding-left: 0;
+    }
+    .pag1 .contenido form
+    {
+        width: 80%;
+        max-width: none;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    .pag1 .contenido .parte1
+    {
+        position: static;
+
+        width: 100%;
+    }
+    .pag1 .contenido .parte1 label
+    {
+        padding-left: 0;
+
+        text-align: center;
+    }
+    .pag1 .contenido .parte1 p
+    {
+        text-align: center;
+    }
+    .pag1 .contenido .parte1 p:nth-of-type(1) input[type=text],
+    .pag1 .contenido .parte1 p:nth-of-type(1) input[type=password]
+    {
+        width: 100%;
+        padding: 10px 0;
+
+        text-align: center;
+    }
+
+    .pag1 .contenido .parte1 p:nth-of-type(2) input[type=number]:nth-of-type(1)
+    {
+        width: 20%;
+        padding: 10px;
+
+        text-align: center;
+    }
+
+    .pag1 .contenido .parte1 p:nth-of-type(2) input[type=number]:nth-of-type(2)
+    {
+        width: 20%;
+        padding: 10px;
+
+        text-align: center;
+    }
+
+    .pag1 .contenido .parte1 p:nth-of-type(2) input[type=number]:nth-of-type(3)
+    {
+        width: 30%;
+        padding: 10px;
+
+        text-align: center;
+    }
+
+    .pag1 .contenido .parte1 input[type=range]
+    {
+        width: 80%;
+    }
+    #tabs li
+    {
+        margin-top: 5px;
+
+        text-align: center;
+
+        flex: 1 1 auto;
+    }
+    .boton
+    {
+        margin-top: 50px;
+    }
+
+    .boton input
+    {
+        font-size: 3vw;
+        line-height: 7vw;
+
+        display: block;
+
+        min-width: 20vh;
+        max-width: 80%;
+        height: 7vw;
+        margin: 0 auto;
+    }
+
+    .pag1 .contenido .parte2
+    {
+        position: static;
+
+        width: 100%;
+    }
+    .pag1 .contenido .parte2 .corredor
+    {
+        width: 100%;
+        min-width: auto;
+    }
+    .pag1 .contenido .parte2 .cardio
+    {
+        width: 100%;
+        min-width: auto;
+    }
+    .registrarse-footer
+    {
+        bottom: -130vh;
+    }
+    .registrarse-footer a
+    {
+        font-size: 3vw;
+        line-height: 7vw;
+
+        display: block;
+
+        min-width: 10vh;
+        max-width: 80%;
+        height: 7vw;
+        margin: 0 auto;
+    }
+    footer span:nth-of-type(1)
+    {
+        font-size: 15vw;
+
+        bottom: -115vh;
+    }
+    footer span:nth-of-type(2)
+    {
+        font-size: 3vw;
+
+        bottom: -120vh;
+    }
+    footer span:nth-of-type(3)
+    {
+        font-size: 3vw;
+
+        bottom: -144vh;
+    }
+    footer span:nth-of-type(4)
+    {
+        font-size: 3vw;
+
+        bottom: -149vh;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    body
+    {
+        font-size: 10px;
+    }
+    header
+    {
+        position: absolute;
+    }
+    header h1
+    {
+        font-size: 60px;
+
+        top: 0;
+    }
+    .errores
+    {
+        left: calc(50% - 160px - 2px);
+
+        width: 300px;
+    }
+    .registrarse-footer a
+    {
+        font-size: 5vw;
+        line-height: 8vw;
+
+        height: 8vw;
+    }
+
+    footer span:nth-of-type(1)
+    {
+        font-size: 20vw;
+
+        bottom: -115vh;
+    }
+    footer span:nth-of-type(2)
+    {
+        font-size: 5vw;
+
+        bottom: -120vh;
+    }
+    footer span:nth-of-type(3)
+    {
+        font-size: 4vw;
+
+        bottom: -144vh;
+    }
+    footer span:nth-of-type(4)
+    {
+        font-size: 4vw;
+
+        bottom: -149vh;
+    }
+}

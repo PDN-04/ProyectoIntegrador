@@ -20,7 +20,7 @@ if (isset($_GET['registro'])) {
     $peso = $_POST['peso'];
 
     $errores = Usuario::crearUsuario($usuario, $password, $password2, $email, $nombre, $sexo, $fechaNac, $estatura, $peso);
-    if ($errores == "||||||") {
+    if ($errores == "|||||||") {
         $_SESSION['usuarioNuevo'] = [$usuario, $password];
     }
     echo $errores;

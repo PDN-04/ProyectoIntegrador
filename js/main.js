@@ -57,17 +57,6 @@ $(document).ready(function() {
         $(".login-background").css("top", "0%");
         $(".login-form").css("transition", "top .3s ease-in-out");
     });
-    $('.login-background').click(function() {
-        $(".login-form").css("top", "-100%");
-        $(".login-background").css("top", "-100%");
-        $(".login-form").css("transition", "top .3s ease-in-out");
-    });
-    $('.login-form #close').click(function() {
-        $(".error").css("opacity", "0");
-        $(".login-form").css("top", "-100%");
-        $(".login-background").css("top", "-100%");
-        $(".login-form").css("transition", "top .3s ease-in-out");
-    });
 
     $('.acordeon .elemento ul').not('.elemento .activo + .elemento ul').hide();
     $('.acordeon .elemento > a').click(function(evento) {

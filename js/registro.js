@@ -8,75 +8,76 @@ $(document).ready(function() {
                 data: datos
             })
             .done(function(respuesta) {
-                if (respuesta == "||||||") {
+                if (respuesta == "|||||||") {
                     window.location.href = "index.php?location=postRegistro&aceptar=true";
-                }
-                else {
+                } else {
                     var errores = [];
                     errores = respuesta.split("|");
                     if (errores[0] != "") {
                         $('.error').append("<p>" + errores[0] + "</p>");
-                        $('#usuario').css("background-color","#ff9395");
-                    }
-                    else {
-                        $('#usuario').css("background-color","#fff");
+                        $('#usuario').css("background-color", "#ff9395");
+                    } else {
+                        $('#usuario').css("background-color", "#fff");
                     }
                     if (errores[1] != "") {
                         $('.error').append("<p>" + errores[1] + "</p>");
-                        $('#password').css("background-color","#ff9395");
-                        $('#password2').css("background-color","#ff9395");
+                        $('#password').css("background-color", "#ff9395");
+                        $('#password2').css("background-color", "#ff9395");
                     }
                     if (errores[2] != "") {
                         $('.error').append("<p>" + errores[2] + "</p>");
-                        $('#password').css("background-color","#ff9395");
-                        $('#password2').css("background-color","#ff9395");
+                        $('#password').css("background-color", "#ff9395");
+                        $('#password2').css("background-color", "#ff9395");
                     }
                     if (errores[1] == "" && errores[2] == "") {
-                        $('#password').css("background-color","#fff");
-                        $('#password2').css("background-color","#fff");
+                        $('#password').css("background-color", "#fff");
+                        $('#password2').css("background-color", "#fff");
                     }
                     if (errores[3] != "") {
                         $('.error').append("<p>" + errores[3] + "</p>");
-                        $('#email').css("background-color","#ff9395");
-                    }
-                    else {
-                        $('#email').css("background-color","#fff");
+                        $('#email').css("background-color", "#ff9395");
                     }
                     if (errores[4] != "") {
                         $('.error').append("<p>" + errores[4] + "</p>");
-                        $('#nombre').css("background-color","#ff9395");
+                        $('#email').css("background-color", "#ff9395");
                     }
-                    else {
-                        $('#nombre').css("background-color","#fff");
+                    if (errores[3] == "" && errores[4] == "") {
+                        $('#email').css("background-color", "#fff");
                     }
+
                     if (errores[5] != "") {
                         $('.error').append("<p>" + errores[5] + "</p>");
-                        $('#dia').css("background-color","#ff9395");
-                        $('#mes').css("background-color","#ff9395");
-                        $('#anyo').css("background-color","#ff9395");
+                        $('#nombre').css("background-color", "#ff9395");
+                    } else {
+                        $('#nombre').css("background-color", "#fff");
                     }
-                    else {
-                        $('#dia').css("background-color","#fff");
-                        $('#mes').css("background-color","#fff");
-                        $('#anyo').css("background-color","#fff");
+                    if (errores[6] != "") {
+                        $('.error').append("<p>" + errores[6] + "</p>");
+                        $('#dia').css("background-color", "#ff9395");
+                        $('#mes').css("background-color", "#ff9395");
+                        $('#anyo').css("background-color", "#ff9395");
+                    } else {
+                        $('#dia').css("background-color", "#fff");
+                        $('#mes').css("background-color", "#fff");
+                        $('#anyo').css("background-color", "#fff");
                     }
-                    
+
                 }
                 $(".errores").css("top", "15%");
-                    $(".errores-background").css("top", "0%");
+                $(".errores-background").css("top", "0%");
+                $(".errores").css("transition", "top .3s ease-in-out");
+                $('.errores-background').click(function() {
+                    $(".errores").css("top", "-100%");
+                    $(".errores-background").css("top", "-100%");
                     $(".errores").css("transition", "top .3s ease-in-out");
-                    $('.errores-background').click(function() {
-                        $(".errores").css("top", "-100%");
-                        $(".errores-background").css("top", "-100%");
-                        $(".errores").css("transition", "top .3s ease-in-out");
-                        $( ".error p" ).remove();
-                    });
-                    $('.errores #close').click(function() {
-                        $(".errores").css("top", "-100%");
-                        $(".errores-background").css("top", "-100%");
-                        $(".errores").css("transition", "top .3s ease-in-out");
-                        $( ".error p" ).remove();
-                    });
+                    $(".error p").remove();
+                });
+                $('.errores #close').click(function() {
+                    $(".errores").css("top", "-100%");
+                    $(".errores-background").css("top", "-100%");
+                    $(".errores").css("transition", "top .3s ease-in-out");
+                    $(".error p").remove();
+                });
             })
 
     })

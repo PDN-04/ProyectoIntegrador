@@ -65,5 +65,14 @@ class UsuarioPDO {
         }
         return $arrayUser;
     }
+    public static function modificarUsuario($codigo, $password, $email, $nombre, $sexo, $fechaNac, $estatura, $peso) {
+        $sentenciaSQL = "update Usuario set password=?, email=?, nombre=?, sexo=?, fechaNac=?, estatura=?, peso=? WHERE codigo=?";
+        $parametros = [$password, $email, $nombre, $sexo, $fechaNac, $estatura, $peso, $codigo];
+        $correcto = false;
+        if (DBPDO::ejecutaConsulta($sentenciaSQL, $parametros)) {
+            $correcto = true;
+        }
+        return $correcto;
+    }
 }
 ?>

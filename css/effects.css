@@ -27,7 +27,7 @@
 }
 .pag1 .contenido > a:hover,
 .registrarse-footer:hover a,
-.login-form input[type=submit]:hover,
+input[type=submit]:hover,
 .registrarse input:hover
 {
     color: #8d0202;

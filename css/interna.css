@@ -244,13 +244,13 @@ section
 
     flex: 1 1 auto;
 }
-.track .datos .informacion ul
+.track .datos .informacion table
 {
-    height: 275px;
-
+    /*height: 275px;*/
+    width: 100%;
     border: 1px solid #82807f;
 }
-.track .datos .informacion li
+.track .datos .informacion td
 {
     padding: 5px;
 }

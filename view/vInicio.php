@@ -12,7 +12,7 @@
 <body>
     <header>
         <h1><a href="index.php?location=inicio">ALIMA</a></h1>
-        <a href="#" class="perfil"><img src="media/images/login-responsive.png" alt=""></a>
+        <a href="index.php?location=perfil" class="perfil"><img src="media/images/login-responsive.png" alt=""></a>
         <a href="index.php?location=inicio&logoff=true" class="logoff"><img src="media/images/logoff.png" alt=""></a>
     </header>
     <main>
@@ -65,12 +65,24 @@
                 		</div>
                 		<div class="datos">
                 			<div class="informacion">
-                				<ul>
-                					<li><span class="icon-compass"></span><span>DISTANCIA</span></li>
-                					<li><span class="icon-alarm"></span><span>TIEMPO</span></li>
-                					<li><span class="icon-speed"></span><span>VELOCIDAD MEDIA</span></li>
-                					<li><span class="icon-heart"></span><span>PULSACIONES</span></li>
-                				</ul>
+                				<table cellspacing="0">
+                					<tr>
+                                        <td><span class="icon-compass"></span></td>
+                                        <td>DISTANCIA</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="icon-compass"></span></td>
+                                        <td>TIEMPO</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="icon-compass"></span></td>
+                                        <td>VELOCIDAD MEDIA</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="icon-compass"></span></td>
+                                        <td>PULSACIONES</td>    
+                                    </tr> 
+                				</table>
                                 <div class="opciones">
                                     <a href="#"><img src="media/images/borrar.png" alt=""></a>
                                     <a href="#"><img src="media/images/share.png" alt=""></a>
