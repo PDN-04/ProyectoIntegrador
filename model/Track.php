@@ -20,7 +20,7 @@ class Track {
     }
     public static function insertarTrack($codigo, $codigoU, $visibilidad, $nombre, $fechaImportacion, $fechaInicio) {
         $correcto = false;
-        if (TrackPDO::insertarTrack($codigo)) {
+        if (TrackPDO::insertarTrack($codigo, $codigoU, $visibilidad, $nombre, $fechaImportacion, $fechaInicio)) {
             $correcto = true;
         }
         return $correcto;

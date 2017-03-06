@@ -27,6 +27,7 @@ class DBPDO {
 			$consultaPreparada -> execute($parametros); // Lanzamiento de la consulta preparada utlizando los parámetros.
 		} catch (PDOException $excepcion) {
 			$consultaPreparada = null;
+			echo $excepcion->getMessage();
 		} finally {
 			unset($conexion); // Cierre de la conexión.
 		}

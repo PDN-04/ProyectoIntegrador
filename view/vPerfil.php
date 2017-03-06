@@ -19,7 +19,7 @@
 
 <body>
     <header>
-        <h1>ALIMA</h1>
+        <h1><a href="index.php?location=login">ALIMA</a></h1>
     </header>
     <div class="errores">
         <h1>Se han encontrado los siguientes errores</h1>
