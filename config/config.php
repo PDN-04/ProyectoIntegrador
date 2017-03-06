@@ -4,7 +4,9 @@ $controladores =[
     'login' => 'controller/cLogin.php',
     'registro' => 'controller/cRegistro.php',
     'postRegistro' => 'controller/cPostRegistro.php',
-    'perfil' => 'controller/cPerfil.php'
+    'perfil' => 'controller/cPerfil.php',
+    'borrarUsuario' => 'controller/cBorrarUsuario.php',
+    'importar' => 'controller/cImportar.php'
 
 ];
 $vistas = [

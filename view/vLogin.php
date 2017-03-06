@@ -63,8 +63,8 @@
 	            <div class="contenido">
 	                <div class="parte1">
 	                    <div class="texto">
-	                        <h1>Hay un millón de razones para correr</h1>
-	                        <span>Alima es una web donde podrás anotar,ver y analizar estádisticas de tus actividades físicas para ayudarte a mantenerte en forma.</span>
+	                        <h1>Observa y analiza tu actividad</h1>
+	                        <span>Alima te muestra un montón de detalles útiles como: calorias quemadas, pulsaciones máximas... Además de un mapa para poder ver tu ruta.</span>
 	                    </div>
 	                    <div class="mobile">
 	                        <img src="media/images/mobile.png" alt="">

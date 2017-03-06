@@ -113,18 +113,18 @@
                             </div>
                         </div>
                         <div class="cardio">
-                            <label>Zonas de frecuencia cardiaca (Opcional)</label>
+                            <label>Zonas de frecuencia cardiaca (Opcional) <a href="media/images/tabla.png" target="_blank">Ayuda</a></label>
                             <div class="zonas">
                                 <label>Sprint</label>
-                                <input type="text" id="sprint" value="">
+                                <input type="number" min="50" max="250">
                                 <label>Velocidad</label>
-                                <input type="text">
+                                <input type="number" min="50" max="250">
                                 <label>Cardio</label>
-                                <input type="text">
+                                <input type="number" min="50" max="250">
                                 <label>Fitness</label>
-                                <input type="text">
+                                <input type="number" min="50" max="250">
                                 <label>Sencillo</label>
-                                <input type="text">
+                                <input type="number" min="50" max="250">
                             </div>
                         </div>
                         <div class="registrarse">

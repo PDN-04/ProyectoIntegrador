@@ -1,777 +1,612 @@
-body
-{
+body {
     font-family: 'Microsoft Sans Serif';
-
     color: #fff;
 }
-header
-{
+
+header {
     position: absolute;
     z-index: 100;
     top: 0;
     left: 0;
-
     width: 100%;
     height: 60px;
 }
-header h1
-{
+
+header h1 {
     font-family: 'sport_centerregular';
     font-size: 60px;
-
     position: absolute;
     left: 30px;
 }
-header h1 a
-{
-    text-decoration: none;
 
+header h1 a {
+    text-decoration: none;
     color: #fff;
 }
-.registrarse
-{
+
+.registrarse {
     position: absolute;
     top: 10px;
     right: 200px;
-
     padding: 10px 20px;
-
     text-decoration: none;
-
     color: #8d0202;
     text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff;
 }
-.login
-{
+
+.login {
     position: absolute;
     top: 10px;
     right: 30px;
-
     padding: 10px 20px;
-
     text-decoration: none;
-
     color: #8d0202;
     text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff;
 }
-.login img
-{
+
+.login img {
     display: none;
 }
-.fondo img
-{
+
+.fondo img {
     position: fixed;
     z-index: -100;
     top: 50%;
     left: 50%;
-
     width: auto;
     min-width: 100%;
     height: auto;
     min-height: 100%;
-
     transform: translateX(-50%) translateY(-50%);
 }
+
 .fondo1,
 .fondo1-responsive .fondo2,
-.fondo2-responsive
-{
+.fondo2-responsive {
     position: absolute;
     z-index: -99;
-
     width: 100%;
     height: 100vh;
 }
-.fondo1 img
-{
+
+.fondo1 img {
     position: absolute;
     z-index: -99;
     top: 0;
-
     width: 100%;
     height: 100%;
-
     opacity: 1;
 }
-.fondo1-responsive img
-{
+
+.fondo1-responsive img {
     position: absolute;
     z-index: -99;
     top: 0;
-
     width: 100%;
     height: 100%;
-
     opacity: 0;
 }
-.fondo2 img
-{
+
+.fondo2 img {
     position: absolute;
     z-index: -99;
     top: 100vh;
-
     width: 100%;
     height: 100%;
-
     opacity: 1;
 }
-.fondo2-responsive img
-{
+
+.fondo2-responsive img {
     position: absolute;
     z-index: -99;
     top: 0;
-
     width: 100%;
     height: 100%;
-
     opacity: 0;
 }
-main
-{
+
+main {
     min-height: 100vh;
 }
-.login-form
-{
+
+.login-form {
     position: fixed;
     z-index: 500;
     top: -100%;
     left: calc(50% - 250px - 2px);
-
     width: 500px;
-
     text-align: center;
-
     border: 2px solid #fff;
     background-color: #82807f;
 }
-.login-form h1
-{
-    font-size: 40px;
 
+.login-form h1 {
+    font-size: 40px;
     bottom: 200px;
 }
-.login-form .error
-{
+
+.login-form .error {
     opacity: 0;
     display: none;
     margin: 15px 0;
 }
-.login-form .error span
-{
-    font-weight: bold;
 
+.login-form .error span {
+    font-weight: bold;
     padding: 10px;
     margin: 10px;
-
     color: #8d0202;
     border: 1px solid #8d0202;
     background-color: #ff9395;
 }
-.login-form p
-{
+
+.login-form p {
     margin: 5px 0;
 }
+
 .login-form input[type=text],
-.login-form input[type=password]
-{
+.login-form input[type=password] {
     font-size: 15px;
-
     display: block;
-
     width: 70%;
     margin: 0 auto;
     padding: 10px;
     padding-left: 20px;
-
     border: none;
     border-radius: none;
 }
-.login-form input[type=submit]
-{
+
+.login-form input[type=submit] {
     font-size: 15px;
-
     display: block;
-
     width: 50%;
     margin: 0 auto;
     padding: 10px;
-
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-
     color: #fff;
     border: 2px solid white;
     border-radius: 20px;
     background: none;
 }
-.login-form .close
-{
+
+.login-form .close {
     position: absolute;
     top: -15px;
     right: -15px;
 }
-.login-form .close img
-{
-    width: 30px;
 
+.login-form .close img {
+    width: 30px;
     cursor: pointer;
 }
-.login-background
-{
+
+.login-background {
     position: fixed;
     z-index: 499;
     top: -100%;
-
     width: 100%;
     height: 100%;
-
     background-color: rgba(127, 127, 127, .5);
 }
-section
-{
+
+section {
     height: 100vh;
 }
-.pag1 .contenido
-{
+
+.pag1 .contenido {
     height: 100vh;
 }
-.pag1 .contenido h1
-{
+
+.pag1 .contenido h1 {
     font-size: 4.5vw;
-
     display: block;
-
     min-width: 10vh;
     max-width: 30%;
     padding-top: 200px;
     padding-left: 30px;
 }
-.pag1 .contenido span
-{
+
+.pag1 .contenido span {
     font-size: 1.1vw;
-
     display: block;
-
     min-width: 10vh;
     max-width: 30%;
     padding-top: 50px;
     padding-left: 30px;
 }
-.pag1 .contenido a
-{
+
+.pag1 .contenido a {
     font-size: 1.1vw;
     line-height: 3vw;
-
     display: block;
-
     min-width: 10vh;
     max-width: 20%;
     height: 3vw;
     margin-top: 50px;
     margin-left: 30px;
-
     text-align: center;
     text-decoration: none;
-
     color: #fff;
     border: .2vw solid white;
     border-radius: 50vw;
 }
-.pag1 .contenido a img
-{
+
+.pag1 .contenido a img {
     text-align: center;
 }
-.pag2 .contenido
-{
+
+.pag2 .contenido {
     height: 100vh;
 }
-.pag2 .contenido .parte1
-{
+
+.pag2 .contenido .parte1 {
     height: 50vh;
 }
-.pag2 .contenido .parte2
-{
+
+.pag2 .contenido .parte2 {
     height: 50vh;
 }
-.pag2 .contenido .parte1 .texto
-{
+
+.pag2 .contenido .parte1 .texto {
     width: 40%;
     height: 100%;
 }
-.pag2 .contenido .parte2 .texto
-{
+
+.pag2 .contenido .parte2 .texto {
     width: 40%;
     height: 100%;
     margin-left: 60%;
-
     text-align: right;
 }
-.pag2 .contenido .parte1 .texto h1
-{
+
+.pag2 .contenido .parte1 .texto h1 {
     font-size: 3vw;
-
     display: block;
-
     padding-top: 8vw;
     padding-left: 30px;
 }
-.pag2 .contenido .parte1 .texto span
-{
+
+.pag2 .contenido .parte1 .texto span {
     font-size: 1.1vw;
-
     display: block;
-
     padding-top: 50px;
     padding-left: 30px;
 }
-.pag2 .contenido .parte1 .mobile img
-{
+
+.pag2 .contenido .parte1 .mobile img {
     position: absolute;
     right: 20vh;
     bottom: -50vh;
-
     height: 20vw;
     min-height: 25%;
 }
-.pag2 .contenido .parte2 .texto h1
-{
+
+.pag2 .contenido .parte2 .texto h1 {
     font-size: 3vw;
-
     display: block;
-
     padding-top: 8vw;
     padding-right: 30px;
 }
-.pag2 .contenido .parte2 .texto span
-{
+
+.pag2 .contenido .parte2 .texto span {
     font-size: 1.1vw;
-
     display: block;
-
     padding-top: 50px;
     padding-right: 30px;
 }
-.pag2 .contenido .parte2 .mobile img
-{
+
+.pag2 .contenido .parte2 .mobile img {
     position: absolute;
     bottom: -100vh;
     left: 20vh;
-
     height: 20vw;
     min-height: 25%;
 }
-.down
-{
+
+.down {
     position: absolute;
     bottom: 30px;
-
     width: 100%;
-
     text-align: center;
 }
-.down img
-{
+
+.down img {
     width: 9vw;
     max-width: 50px;
-
     cursor: pointer;
 }
-footer
-{
-    height: 50vh;
 
+footer {
+    height: 50vh;
     background-color: #82807f;
 }
-.registrarse-footer
-{
+
+.registrarse-footer {
     position: absolute;
     bottom: -130vh;
-
     width: 100%;
-
     text-align: center;
 }
-.registrarse-footer a
-{
+
+.registrarse-footer a {
     font-size: 1.1vw;
     line-height: 3vw;
-
     display: block;
-
     min-width: 10vh;
     max-width: 20%;
     height: 3vw;
     margin: 0 auto;
-
     text-align: center;
     text-decoration: none;
-
     color: #fff;
     border: .2vw solid white;
     border-radius: 50vw;
 }
-footer span:nth-of-type(1)
-{
+
+footer span:nth-of-type(1) {
     font-family: 'sport_centerregular';
     font-size: 5vw;
-
     position: absolute;
     bottom: -110vh;
-
     display: block;
-
     width: 100%;
-
     text-align: center;
 }
-footer span:nth-of-type(2)
-{
-    font-size: 1.1vw;
 
+footer span:nth-of-type(2) {
+    font-size: 1.1vw;
     position: absolute;
     bottom: -120vh;
-
     display: block;
-
     width: 100%;
-
     text-align: center;
 }
-footer span:nth-of-type(3)
-{
-    font-size: 1.1vw;
 
+footer span:nth-of-type(3) {
+    font-size: 1.1vw;
     position: absolute;
     bottom: -145vh;
-
     display: block;
-
     width: 100%;
-
     text-align: center;
 }
-footer span:nth-of-type(4)
-{
-    font-size: 1.1vw;
 
+footer span:nth-of-type(4) {
+    font-size: 1.1vw;
     position: absolute;
     bottom: -149vh;
-
     display: block;
-
     width: 100%;
-
     text-align: center;
 }
-@media screen and (min-width: 2000px)
-{
-    .registrarse
-    {
+
+@media screen and (min-width: 2000px) {
+    .registrarse {
         top: 5px;
         right: 300px;
     }
-    .login
-    {
+    .login {
         top: 5px;
     }
-    .pag2 .contenido .parte1 .mobile img
-    {
+    .pag2 .contenido .parte1 .mobile img {
         right: 5vh;
     }
-    .pag2 .contenido .parte2 .mobile img
-    {
+    .pag2 .contenido .parte2 .mobile img {
         left: 5vh;
     }
 }
-@media screen and (max-width: 1000px)
-{
-    .pag2 .contenido .parte1 .mobile img
-    {
+
+@media screen and (max-width: 1000px) {
+    .pag2 .contenido .parte1 .mobile img {
         right: 10vh;
     }
-    .pag2 .contenido .parte2 .mobile img
-    {
+    .pag2 .contenido .parte2 .mobile img {
         left: 10vh;
     }
 }
-@media screen and (max-width: 800px)
-{
-    header
-    {
+
+@media screen and (max-width: 800px) {
+    header {
         position: absolute;
     }
-    header h1
-    {
+    header h1 {
         font-size: 80px;
-
         top: -6px;
     }
-    .login
-    {
+    .login {
         top: 5px;
-
         padding: 0;
-
         border: none;
     }
-    .login span
-    {
+    .login span {
         display: none;
     }
-    .login img
-    {
+    .login img {
         display: block;
     }
-    .fondo1 img
-    {
+    .fondo1 img {
         opacity: 0;
     }
-    .fondo1-responsive img
-    {
+    .fondo1-responsive img {
         opacity: 1;
     }
-    .fondo2 img
-    {
+    .fondo2 img {
         opacity: 0;
     }
-    .fondo2-responsive img
-    {
+    .fondo2-responsive img {
         opacity: 1;
     }
-    .login-form
-    {
+    .login-form {
         left: calc(50% - 160px - 2px);
-
         width: 300px;
     }
-    .pag1 .contenido
-    {
+    .pag1 .contenido {
         text-align: center;
-
         border-bottom: 1px solid #fff;
     }
-    .pag1 .contenido h1
-    {
+    .pag1 .contenido h1 {
         font-size: 8vw;
-
         max-width: 80%;
         margin: 0 auto;
         padding-top: 150px;
         padding-left: 0;
     }
-    .pag1 .contenido span
-    {
+    .pag1 .contenido span {
         font-size: 3vw;
-
         display: block;
-
         max-width: 80%;
         margin: 0 auto;
         padding: 50px 0;
     }
-    .pag1 .contenido a
-    {
+    .pag1 .contenido a {
         font-size: 3vw;
         line-height: 7vw;
-
         display: block;
-
         min-width: 10vh;
         max-width: 80%;
         height: 7vw;
         margin: 0 auto;
     }
-    .pag2 .contenido .parte1
-    {
+    .pag2 .contenido .parte1 {
         border-bottom: 1px solid #fff;
     }
     .pag2 .contenido .parte1 .texto,
-    .pag2 .contenido .parte2 .texto
-    {
+    .pag2 .contenido .parte2 .texto {
         width: 100%;
         margin-left: 0;
-
         text-align: center;
     }
     .pag2 .contenido .parte1 .texto h1,
-    .pag2 .contenido .parte2 .texto h1
-    {
+    .pag2 .contenido .parte2 .texto h1 {
         font-size: 5vw;
-
         padding-top: 5vw;
         padding-right: 0;
         padding-left: 0;
     }
     .pag2 .contenido .parte1 .texto span,
-    .pag2 .contenido .parte2 .texto span
-    {
+    .pag2 .contenido .parte2 .texto span {
         font-size: 2vw;
-
         padding-top: 2vw;
         padding-right: 0;
         padding-left: 0;
     }
     .pag2 .contenido .parte1 .mobile,
-    .pag2 .contenido .parte2 .mobile
-    {
+    .pag2 .contenido .parte2 .mobile {
         position: absolute;
-
         width: 100%;
-
         text-align: center;
     }
     .pag2 .contenido .parte1 .mobile img,
-    .pag2 .contenido .parte2 .mobile img
-    {
+    .pag2 .contenido .parte2 .mobile img {
         position: relative;
         right: 0;
         bottom: 30vw;
         left: 0;
-
         height: 30vw;
         min-height: 10%;
-
         text-align: center;
     }
-    .registrarse
-    {
+    .registrarse {
         display: none;
     }
-    .down
-    {
+    .down {
         display: none;
     }
-    .registrarse-footer
-    {
+    .registrarse-footer {
         bottom: -130vh;
     }
-    .registrarse-footer a
-    {
+    .registrarse-footer a {
         font-size: 3vw;
         line-height: 7vw;
-
         display: block;
-
         min-width: 10vh;
         max-width: 80%;
         height: 7vw;
         margin: 0 auto;
     }
-    footer span:nth-of-type(1)
-    {
+    footer span:nth-of-type(1) {
         font-size: 15vw;
-
         bottom: -115vh;
     }
-    footer span:nth-of-type(2)
-    {
+    footer span:nth-of-type(2) {
         font-size: 3vw;
-
         bottom: -120vh;
     }
-    footer span:nth-of-type(3)
-    {
+    footer span:nth-of-type(3) {
         font-size: 3vw;
-
         bottom: -144vh;
     }
-    footer span:nth-of-type(4)
-    {
+    footer span:nth-of-type(4) {
         font-size: 3vw;
-
         bottom: -149vh;
     }
 }
-@media screen and (max-width: 500px)
-{
-    header
-    {
+
+@media screen and (max-width: 500px) {
+    header {
         position: absolute;
     }
-    header h1
-    {
+    header h1 {
         font-size: 60px;
-
+        left: 0;
         top: 0;
     }
-    .login
-    {
+    .login {
         top: 8px;
-
         padding: 0;
-
+        right: 0;
         border: none;
     }
-    .login img
-    {
+    .login img {
         width: 40px;
     }
-    .pag1 .contenido h1
-    {
+    .pag1 .contenido h1 {
         font-size: 12vw;
-
         padding-top: 150px;
     }
-    .pag1 .contenido span
-    {
+    .pag1 .contenido span {
         font-size: 5vw;
     }
-    .pag1 .contenido a
-    {
+    .pag1 .contenido a {
         font-size: 5vw;
         line-height: 8vw;
-
         height: 8vw;
     }
     .pag2 .contenido .parte1 .texto h1,
-    .pag2 .contenido .parte2 .texto h1
-    {
+    .pag2 .contenido .parte2 .texto h1 {
         font-size: 8vw;
     }
     .pag2 .contenido .parte1 .texto span,
-    .pag2 .contenido .parte2 .texto span
-    {
+    .pag2 .contenido .parte2 .texto span {
         font-size: 4vw;
-
         padding-top: 4vw;
     }
     .pag2 .contenido .parte1 .mobile img,
-    .pag2 .contenido .parte2 .mobile img
-    {
+    .pag2 .contenido .parte2 .mobile img {
         bottom: 30vw;
-
         height: 30vw;
     }
-    .registrarse-footer a
-    {
+    .registrarse-footer a {
         font-size: 5vw;
         line-height: 8vw;
-
         height: 8vw;
     }
-    footer span:nth-of-type(1)
-    {
+    footer span:nth-of-type(1) {
         font-size: 20vw;
-
         bottom: -115vh;
     }
-    footer span:nth-of-type(2)
-    {
+    footer span:nth-of-type(2) {
         font-size: 5vw;
-
         bottom: -120vh;
     }
-    footer span:nth-of-type(3)
-    {
+    footer span:nth-of-type(3) {
         font-size: 4vw;
-
         bottom: -144vh;
     }
-    footer span:nth-of-type(4)
-    {
+    footer span:nth-of-type(4) {
         font-size: 4vw;
-
         bottom: -149vh;
     }
 }

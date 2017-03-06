@@ -95,7 +95,9 @@ main
 {
     min-height: 100vh;
 }
-.errores, .correcto, .confirmacion-form
+.errores,
+.correcto,
+.confirmacion-form
 {
     position: fixed;
     z-index: 500;
@@ -104,6 +106,7 @@ main
 
     width: 500px;
     padding: 10px;
+
     text-align: center;
 
     border: 2px solid #fff;
@@ -111,22 +114,26 @@ main
 }
 .errores h1
 {
-    font-size: 20px; 
+    font-size: 20px;
+
     margin-bottom: 5px;
 }
 .correcto h1
 {
-    font-size: 20px; 
+    font-size: 20px;
 }
 .errores .error
 {
     margin: 0 auto;
+
     text-align: left;
+
     color: #8d0202;
     border: 1px solid #8d0202;
     background-color: #ff9395;
 }
-.errores .error p, .confirmacion-form p
+.errores .error p,
+.confirmacion-form p
 {
     margin: 5px;
 }
@@ -161,22 +168,28 @@ main
 
     color: #fff;
     border: 2px solid white;
-    background: none;
     border-radius: 20px;
+    background: none;
 }
-.errores .close, .correcto .close, .confirmacion-form .close
+.errores .close,
+.correcto .close,
+.confirmacion-form .close
 {
     position: absolute;
     top: -15px;
     right: -15px;
 }
-.errores .close img, .correcto .close img, .confirmacion-form .close img
+.errores .close img,
+.correcto .close img,
+.confirmacion-form .close img
 {
     width: 30px;
 
     cursor: pointer;
 }
-.errores-background, .correcto-background, .confirmacion-background
+.errores-background,
+.correcto-background,
+.confirmacion-background
 {
     position: fixed;
     z-index: 499;
@@ -279,9 +292,10 @@ section
 }
 .pag1 .contenido p input[type=number]
 {
+    margin: 5px 0;
     padding: 10px;
     padding-left: 15px;
-margin: 5px 0;
+
     border: none;
     border-radius: 20px;
 }
@@ -532,66 +546,21 @@ footer span:nth-of-type(4)
 
         width: 100%;
     }
-    .pag1 .contenido .parte1 label
+    .pag1 .contenido label
     {
         padding-left: 0;
 
         text-align: center;
     }
-    .pag1 .contenido .parte1 p
+    .pag1 .contenido p
     {
         text-align: center;
     }
-    .pag1 .contenido .parte1 p:nth-of-type(1) input[type=text],
-    .pag1 .contenido .parte1 p:nth-of-type(1) input[type=password]
-    {
-        width: 100%;
-        padding: 10px 0;
 
-        text-align: center;
-    }
-
-    .pag1 .contenido .parte1 p:nth-of-type(2) input[type=number]:nth-of-type(1)
-    {
-        width: 20%;
-        padding: 10px;
-
-        text-align: center;
-    }
-
-    .pag1 .contenido .parte1 p:nth-of-type(2) input[type=number]:nth-of-type(2)
-    {
-        width: 20%;
-        padding: 10px;
-
-        text-align: center;
-    }
-
-    .pag1 .contenido .parte1 p:nth-of-type(2) input[type=number]:nth-of-type(3)
-    {
-        width: 30%;
-        padding: 10px;
-
-        text-align: center;
-    }
-
-    .pag1 .contenido .parte1 input[type=range]
-    {
-        width: 80%;
-    }
-    #tabs li
-    {
-        margin-top: 5px;
-
-        text-align: center;
-
-        flex: 1 1 auto;
-    }
     .boton
     {
         margin-top: 50px;
     }
-
     .boton input
     {
         font-size: 3vw;
@@ -678,6 +647,7 @@ footer span:nth-of-type(4)
         font-size: 60px;
 
         top: 0;
+        left: 0;
     }
     .errores
     {

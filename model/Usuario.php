@@ -57,6 +57,13 @@ class Usuario {
         }
         return $errores;
     }
+    public static function borrarUsuario($codigo) {
+        $correcto = false;
+        if (UsuarioPDO::borrarUsuario($codigo)) {
+            $correcto = true;
+        }
+        return $correcto;
+    }
     public function getCodigo() {
         return $this->codigo;
     }

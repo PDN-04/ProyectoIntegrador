@@ -26,6 +26,9 @@ $(document).ready(function() {
         $(".errores-background").css("top", "0%");
         $(".errores").css("transition", "top .3s ease-in-out");
     }
+    $('#enviar').click(function() {
+        document.activeElement.blur();
+    });
     $("form").submit(function(evento) {
         evento.preventDefault();
         confirmar();
@@ -47,6 +50,9 @@ $(document).ready(function() {
     })
     $(".formPeso").submit(function(evento) {
         seleccion = "peso";
+    })
+    $(".formBorrar").submit(function(evento) {
+        seleccion = "borrar";
     })
     $(".formConfirmacion").submit(function(evento) {
         evento.preventDefault();
@@ -167,13 +173,28 @@ $(document).ready(function() {
                                 }
                             })
                     }
+                    if (seleccion == "borrar") {
+                        var datos = $(".formBorrar").serializeArray();
+                        $.ajax({
+                                url: "index.php?location=borrarUsuario&formBorrar=true",
+                                type: "post",
+                                data: datos
+                            })
+                            .done(function(respuesta) {
+                                if (respuesta) {
+                                    window.location.href = "index.php?location=login";
+                                }
+                                else {
+                                    window.location.href = "index.php?location=inicio";
+                                }
+                            })
+                    }
                 } else {
                     $(".formConfirmacion #password").css("background-color", "#ff9395");
                 }
             })
 
     })
-
 
     $('.errores-background').click(function() {
         $(".errores").css("top", "-100%");

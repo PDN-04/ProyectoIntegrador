@@ -74,5 +74,14 @@ class UsuarioPDO {
         }
         return $correcto;
     }
+    public static function borrarUsuario($codigo) {
+        $sentenciaSQL = "delete from Usuario where codigo=?";
+        $parametros = [$codigo];
+        $correcto = false;
+        if (DBPDO::ejecutaConsulta($sentenciaSQL, $parametros)) {
+            $correcto = true;
+        }
+        return $correcto;
+    }
 }
 ?>

@@ -45,7 +45,7 @@
                 <input type="password" id="password" name="passwordConfirmacion" placeholder="Contraseña">
             </p>
             <p>
-                <input type="submit" name="enviar" value="Enviar">
+                <input type="submit" id="enviar" name="enviar" value="Enviar">
             </p>
             <div class="close">
                 <img src="media/images/close.png" id="close" alt="">
@@ -129,6 +129,13 @@
                             <input class="peso" type="range" name="peso" min="30" max="250" value="<?php echo $peso ?>"><span id="peso"><?php echo $peso ?> kg</span>
                             <div class="boton">
                                 <input type="submit" class="registro" name="cambiarPeso" value="Cambiar peso">
+                            </div>
+                        </p>
+                    </form>
+                    <form class="formBorrar">
+                        <p>
+                            <div class="boton">
+                                <input type="submit" class="registro" name="borrarUsuario" value="Borrar usuario">
                             </div>
                         </p>
                     </form>

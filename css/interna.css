@@ -145,22 +145,53 @@ section
     width: 30%;
     margin-top: 20px;
 }
+#formImportar
+{
+    position: relative;
+    left: 10%;
+
+    width: 90%;
+}
+#formImportar input
+{
+    display: none;
+}
+#formImportar label
+{
+    display: block;
+
+    width: 46px;
+    height: 46px;
+    margin: 0 auto;
+}
+#formImportar img
+{
+    display: block;
+
+    width: 46px;
+    height: 46px;
+
+    cursor: pointer;
+}
 .acordeon
 {
     position: absolute;
+    top: 57px;
     left: 10%;
 
     width: 90%;
     margin: 0 auto;
-
-    border: 1px solid #424242;
+}
+.elemento
+{
+    margin-bottom: 10px;
 }
 .elemento > a,
 .elemento ul
 {
     display: block;
 
-    padding: 10px;
+    padding: 15px;
 
     text-decoration: none;
 }
@@ -169,23 +200,14 @@ section
     cursor: pointer;
 
     color: #000;
-    border-bottom: 1px solid #424242;
     background: #fff;
-}
-.elemento ul
-{
-    border-bottom: 1px solid #424242;
-}
-.acordeon:last-child
-{
-    border-bottom: none;
 }
 .elemento ul
 {
     padding: 0;
 
     color: #fff;
-    background: #aaa;
+    background-color: #aaa;
 }
 .elemento ul li a
 {
@@ -226,12 +248,42 @@ section
     color: #000;
     background-color: #fff;
 }
+.track .titulo a:nth-of-type(1)
+{
+    position: absolute;
+    top: 13px;
+    left: 50px;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+
+    background-image: url(../media/images/share.png);
+    background-position: center;
+    background-size: 20px;
+}
+.track .titulo a:nth-of-type(2)
+{
+    position: absolute;
+    top: 13px;
+    left: 15px;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+
+    background-image: url(../media/images/borrar.png);
+    background-position: center;
+    background-size: 20px;
+}
 .track .datos
 {
     display: flex;
     flex-direction: row;
 
-    height: 300px;
+    min-height: 300px;
     margin-top: 10px;
     padding: 15px;
 
@@ -240,47 +292,62 @@ section
 }
 .track .datos .informacion
 {
+    min-width: 200px;
     margin-right: 5px;
 
-    flex: 1 1 auto;
-}
-.track .datos .informacion table
-{
-    /*height: 275px;*/
-    width: 100%;
     border: 1px solid #82807f;
+
+    flex: 1 1 40%;
 }
-.track .datos .informacion td
+
+.track .datos .informacion .valores
 {
-    padding: 5px;
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.track .datos .informacion li span:last-child
+.track .datos .informacion .valores .valor
 {
-    font-size: 15px;
-    margin-left: 20px;
-    line-height: 30px;
+    position: relative;
+
+    width: 120px;
+    height: 30px;
+    margin: 10px 5px 0 5px;
 }
-.track .datos .informacion .opciones
+.track .datos .informacion .valores .valor span:nth-of-type(1)
 {
+    font-size: 28px;
+
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+.track .datos .informacion .valores .valor span:nth-of-type(2)
+{
+    font-size: 8px;
+
+    position: absolute;
+    top: 0;
+    left: 32px;
+
     width: 100%;
-    height: 25px;
-
-    text-align: center;
 }
-.track .datos .informacion .opciones a
+.track .datos .informacion .valores .valor span:nth-of-type(3)
 {
-    line-height: 25px;
+    font-size: 20px;
 
-    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    left: 32px;
+
+    width: 100%;
+}
+.track .datos .informacion .valores .valor span .unidad
+{
+    font-size: 8px;
+
     display: inline-block;
-    color: #000;
-}
-.track .datos .informacion .opciones img
-{
-    height: 20px;
-    vertical-align: middle;
-    margin: 0 5px;
-
 }
 .track .datos .mapa
 {
@@ -288,7 +355,33 @@ section
 
     border: 1px solid #82807f;
 
-    flex: 3 3 auto;
+    flex: 1 1 60%;
+}
+.pulsaciones
+{
+    position: relative;
+    top: 10px;
+
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+
+    background-color: #fff;
+}
+.pulsaciones .grafico
+{
+    position: relative;
+    top: 14px;
+
+    display: block;
+
+    width: calc(100% - 28px);
+    height: calc(100% - 28px);
+    margin: 0 auto;
+
+    border: 1px solid #82807f;
+    background-image: url(../media/images/grafico.png);
+    background-position: center;
 }
 footer
 {
@@ -412,9 +505,10 @@ footer span:nth-of-type(4)
     .perfil
     {
         top: 8px;
+        right: 100px;
 
         padding: 0;
-        right: 100px;
+
         border: none;
     }
     .perfil img
@@ -453,23 +547,22 @@ footer span:nth-of-type(4)
         padding-top: 150px;
         padding-left: 0;
     }
-    .pag1 .contenido form
-    {
-        width: 80%;
-        max-width: none;
-        margin: 0 auto;
-        padding-left: 0;
-    }
     .pag1 .contenido .parte1
     {
         position: static;
 
         width: 100%;
     }
+    #formImportar
+    {
+        left: 0;
+
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
     .pag1 .contenido .parte1 .acordeon
     {
         position: static;
-
     }
     .pag1 .contenido .parte2
     {
@@ -534,13 +627,15 @@ footer span:nth-of-type(4)
         font-size: 60px;
 
         top: 0;
+        left: 0;
     }
     .perfil
     {
         top: 8px;
+        right: 50px;
 
         padding: 0;
-        right: 80px;
+
         border: none;
     }
     .perfil img
@@ -551,6 +646,7 @@ footer span:nth-of-type(4)
     .logoff
     {
         top: 8px;
+        right: 0;
 
         padding: 0;
 
@@ -560,6 +656,14 @@ footer span:nth-of-type(4)
     {
         width: 40px;
         height: 40px;
+    }
+    .track .titulo a:nth-of-type(1)
+    {
+        top: 10px;
+    }
+    .track .titulo a:nth-of-type(2)
+    {
+        top: 10px;
     }
     .registrarse-footer a
     {
